@@ -1,0 +1,353 @@
+21:22:22 1/4 Construyendo universo
+21:22:22   S&P 500          503 tickers
+21:22:23   S&P 400 MidCap   400 tickers
+21:22:23   Nasdaq-100      FALLÓ (no se encontró una tabla con columna de ticker). Añade sus tickers a mano en tickers_extra.txt
+21:22:23   IBEX 35           35 tickers
+21:22:23   DAX               40 tickers
+21:22:23   MDAX              50 tickers
+21:22:24   CAC 40            40 tickers
+21:22:24   FTSE MIB          40 tickers
+21:22:24   AEX               25 tickers
+21:22:24   FTSE 100         100 tickers
+21:22:24   Manual             0 tickers
+21:22:24 Universo total (sin duplicados): 1228
+21:22:24 2/4 Descargando datos de 1228 empresas (puede tardar 15-40 min)
+21:22:34   descargados 50/1228
+21:22:43   descargados 100/1228
+21:22:51   descargados 150/1228
+21:23:00   descargados 200/1228
+21:23:09   descargados 250/1228
+21:23:18   descargados 300/1228
+21:23:26   descargados 350/1228
+21:23:35   descargados 400/1228
+21:23:44   descargados 450/1228
+21:23:47 HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"No fundamentals data found for symbol: FOX"}}}
+21:23:53   descargados 500/1228
+21:24:02   descargados 550/1228
+21:24:11   descargados 600/1228
+21:24:19   descargados 650/1228
+21:24:28   descargados 700/1228
+21:24:37   descargados 750/1228
+21:25:48   descargados 800/1228
+21:26:14 HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
+21:26:21   descargados 850/1228
+21:26:28 HTTP Error 502: <!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Yahoo</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <style>
+      html {
+          height: 100%;
+      }
+      body {
+          background: #fafafc url(https://s.yimg.com/nn/img/sad-panda-201402200631.png) 50% 50%;
+          background-size: cover;
+          height: 100%;
+          text-align: center;
+          font: 300 18px "helvetica neue", helvetica, verdana, tahoma, arial, sans-serif;
+          margin: 0;
+      }
+      table {
+          height: 100%;
+          width: 100%;
+          table-layout: fixed;
+          border-collapse: collapse;
+          border-spacing: 0;
+          border: none;
+      }
+      h1 {
+          font-size: 42px;
+          font-weight: 400;
+          color: #400090;
+      }
+      p {
+          color: #1A1A1A;
+      }
+      #message-1 {
+          font-weight: bold;
+          margin: 0;
+      }
+      #message-2 {
+          display: inline-block;
+          *display: inline;
+          zoom: 1;
+          max-width: 17em;
+          _width: 17em;
+      }
+      </style>
+      <script>
+      
+      </script>
+  </head>
+  <body>
+  <!-- status code : 502 -->
+  <!-- Could Not Connect -->
+  <!-- host machine: media-router-api7049.prod.media.gq1.yahoo.com -->
+  <!-- timestamp: 1791408388.137 -->
+  <!-- url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PPC?modules=earningsTrend&corsDomain=finance.yahoo.com&formatted=false&symbol=PPC&crumb=Tk7J7JVycCY-->
+  <script type="text/javascript">
+    function buildUrl(url, parameters){
+      var qs = [];
+      for(var key in parameters) {
+        var value = parameters[key];
+        qs.push(encodeURIComponent(key) + "=" + encodeURIComponent(value));
+      }
+      url = url + "?" + qs.join('&');
+      return url;
+    }
+
+    function generateBRBMarkup(site) {
+      params.source = 'brb';
+      generateBeaconMarkup(params);
+      var englishHeader = 'Will be right back...';
+      var englishMessage1 = 'Thank you for your patience.';
+      var englishMessage2 = 'Our engineers are working quickly to resolve the issue.';
+      var defaultLogoStyle = '';
+      var siteDataMap = {
+        'default': {
+          logo: 'https://s.yimg.com/rz/p/yahoo_frontpage_en-US_s_f_p_205x58_frontpage.png',
+          logoAlt: 'Yahoo Logo',
+          logoStyle: defaultLogoStyle,
+          header: englishHeader,
+          message1: englishMessage1,
+          message2: englishMessage2
+        }
+      };
+
+      var siteDetails = siteDataMap['default'];
+
+      document.write('<table><tbody><tr><td>');
+      document.write('<div id="content">');
+      document.write('<img src="' + siteDetails['logo'] + '" alt="' + siteDetails['logoAlt'] + '" style="' + siteDetails['logoStyle'] + '">');
+      document.write('<h1 style="margin-top:20px;">' + siteDetails['header'] + '</h1>');
+      document.write('<p id="message-1">' + siteDetails['message1'] + '</p>');
+      document.write('<p id="message-2">' + siteDetails['message2'] + '</p>');
+      document.write('</div>');
+      document.write('</td></tr></tbody></table>');
+    }
+
+    function generateBeaconMarkup(params) {
+        document.write('<img src="' + buildUrl('//geo.yahoo.com/b', params) + '" style="display:none;" width="0px" height="0px"/>');
+        var beacon = new Image();
+        beacon.src = buildUrl('//bcn.fp.yahoo.com/p', params);
+    }
+
+    var hostname = window.location.hostname;
+    var device = 'desktop';
+    var ynet = ('-' === '1');
+    var prid = '2c1nhhtlcde84';
+    var crid = '2c1nhhtlcde84';
+    var time = new Date().getTime();
+    var params = {
+        s: '1197757129',
+        t: time,
+        err_url: document.URL,
+        err: '502',
+        test: '-',
+        ats_host: 'media-router-api7049.prod.media.gq1.yahoo.com',
+        prid: prid,
+        crid: crid,
+        message: 'Could Not Connect'
+    };
+
+    if(ynet) {
+        document.write('<div style="height: 5px; background-color: red;"></div>');
+    }
+    generateBRBMarkup(hostname, params);
+
+  </script>
+  <noscript>
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div id="englishContent">
+            <h1 style="margin-top:20px;">Will be right back...</h1>
+            <p id="message-1">Thank you for your patience.</p>
+            <p id="message-2">Our engineers are working quickly to resolve the issue.</p>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  </noscript>
+  </body>
+</html>
+
+21:26:30   descargados 900/1228
+21:26:39   descargados 950/1228
+21:26:47 HTTP Error 502: <!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Yahoo</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <style>
+      html {
+          height: 100%;
+      }
+      body {
+          background: #fafafc url(https://s.yimg.com/nn/img/sad-panda-201402200631.png) 50% 50%;
+          background-size: cover;
+          height: 100%;
+          text-align: center;
+          font: 300 18px "helvetica neue", helvetica, verdana, tahoma, arial, sans-serif;
+          margin: 0;
+      }
+      table {
+          height: 100%;
+          width: 100%;
+          table-layout: fixed;
+          border-collapse: collapse;
+          border-spacing: 0;
+          border: none;
+      }
+      h1 {
+          font-size: 42px;
+          font-weight: 400;
+          color: #400090;
+      }
+      p {
+          color: #1A1A1A;
+      }
+      #message-1 {
+          font-weight: bold;
+          margin: 0;
+      }
+      #message-2 {
+          display: inline-block;
+          *display: inline;
+          zoom: 1;
+          max-width: 17em;
+          _width: 17em;
+      }
+      </style>
+      <script>
+      
+      </script>
+  </head>
+  <body>
+  <!-- status code : 502 -->
+  <!-- Could Not Connect -->
+  <!-- host machine: media-router-api7049.prod.media.gq1.yahoo.com -->
+  <!-- timestamp: 1791408407.478 -->
+  <!-- url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/SDLF.L?modules=earningsTrend&corsDomain=finance.yahoo.com&formatted=false&symbol=SDLF.L&crumb=Tk7J7JVycCY-->
+  <script type="text/javascript">
+    function buildUrl(url, parameters){
+      var qs = [];
+      for(var key in parameters) {
+        var value = parameters[key];
+        qs.push(encodeURIComponent(key) + "=" + encodeURIComponent(value));
+      }
+      url = url + "?" + qs.join('&');
+      return url;
+    }
+
+    function generateBRBMarkup(site) {
+      params.source = 'brb';
+      generateBeaconMarkup(params);
+      var englishHeader = 'Will be right back...';
+      var englishMessage1 = 'Thank you for your patience.';
+      var englishMessage2 = 'Our engineers are working quickly to resolve the issue.';
+      var defaultLogoStyle = '';
+      var siteDataMap = {
+        'default': {
+          logo: 'https://s.yimg.com/rz/p/yahoo_frontpage_en-US_s_f_p_205x58_frontpage.png',
+          logoAlt: 'Yahoo Logo',
+          logoStyle: defaultLogoStyle,
+          header: englishHeader,
+          message1: englishMessage1,
+          message2: englishMessage2
+        }
+      };
+
+      var siteDetails = siteDataMap['default'];
+
+      document.write('<table><tbody><tr><td>');
+      document.write('<div id="content">');
+      document.write('<img src="' + siteDetails['logo'] + '" alt="' + siteDetails['logoAlt'] + '" style="' + siteDetails['logoStyle'] + '">');
+      document.write('<h1 style="margin-top:20px;">' + siteDetails['header'] + '</h1>');
+      document.write('<p id="message-1">' + siteDetails['message1'] + '</p>');
+      document.write('<p id="message-2">' + siteDetails['message2'] + '</p>');
+      document.write('</div>');
+      document.write('</td></tr></tbody></table>');
+    }
+
+    function generateBeaconMarkup(params) {
+        document.write('<img src="' + buildUrl('//geo.yahoo.com/b', params) + '" style="display:none;" width="0px" height="0px"/>');
+        var beacon = new Image();
+        beacon.src = buildUrl('//bcn.fp.yahoo.com/p', params);
+    }
+
+    var hostname = window.location.hostname;
+    var device = 'desktop';
+    var ynet = ('-' === '1');
+    var prid = '0c4pjpplcde8n';
+    var crid = '0c4pjpplcde8n';
+    var time = new Date().getTime();
+    var params = {
+        s: '1197757129',
+        t: time,
+        err_url: document.URL,
+        err: '502',
+        test: '-',
+        ats_host: 'media-router-api7049.prod.media.gq1.yahoo.com',
+        prid: prid,
+        crid: crid,
+        message: 'Could Not Connect'
+    };
+
+    if(ynet) {
+        document.write('<div style="height: 5px; background-color: red;"></div>');
+    }
+    generateBRBMarkup(hostname, params);
+
+  </script>
+  <noscript>
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div id="englishContent">
+            <h1 style="margin-top:20px;">Will be right back...</h1>
+            <p id="message-1">Thank you for your patience.</p>
+            <p id="message-2">Our engineers are working quickly to resolve the issue.</p>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  </noscript>
+  </body>
+</html>
+
+21:26:50   descargados 1000/1228
+21:27:24   descargados 1050/1228
+21:28:35   descargados 1100/1228
+21:28:44   descargados 1150/1228
+21:28:52   descargados 1200/1228
+21:28:57   descargados 1228/1228
+21:28:57 3/4 Puntuando
+21:28:57    467 superan filtros, 761 excluidas
+21:28:57 4/4 Exportando
+21:28:58 Excel generado: /home/runner/work/Screener/Screener/resultados/screener_2026-10-07.xlsx
+21:28:58 Correo no configurado (variables SCREENER_EMAIL_*); se omite el envío
+
+TOP 10
+ ranking ticker                         empresa            sector  puntuacion
+       1     MU         Micron Technology, Inc.        Technology        84.0
+       2    APA                 APA Corporation            Energy        83.7
+       3    WEX                        WEX Inc.        Technology        83.0
+       4 SDF.DE K+S Aktiengesellschaft        N   Basic Materials        82.7
+       5    ANF     Abercrombie & Fitch Company Consumer Cyclical        81.5
+       6   EXPE             Expedia Group, Inc. Consumer Cyclical        80.4
+       7    ULS               UL Solutions Inc.       Industrials        79.5
+       8   JAZZ        Jazz Pharmaceuticals plc        Healthcare        78.8
+       9    THC    Tenet Healthcare Corporation        Healthcare        78.7
+      10   SNDK             Sandisk Corporation        Technology        78.5
