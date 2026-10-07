@@ -1,0 +1,36 @@
+name: Screener diario
+
+on:
+  schedule:
+    - cron: "17 5 * * 1-5"   # lunes a viernes 05:17 UTC (07:17 Madrid en verano, 06:17 en invierno)
+  workflow_dispatch:          # lanzarlo a mano desde la pestaña Actions
+
+permissions:
+  contents: write             # para guardar los resultados en el repositorio
+
+jobs:
+  screener:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Ejecutar screener
+        env:
+          SCREENER_EMAIL_USER: ${{ secrets.SCREENER_EMAIL_USER }}
+          SCREENER_EMAIL_PASS: ${{ secrets.SCREENER_EMAIL_PASS }}
+          SCREENER_EMAIL_TO:   ${{ secrets.SCREENER_EMAIL_TO }}
+        run: python screener.py 2>&1 | tee resultados_log.txt
+      - name: Guardar resultados en el repositorio
+        if: always()
+        run: |
+          mkdir -p resultados
+          mv resultados_log.txt "resultados/log_$(date +%F).txt" || true
+          git config user.name  "screener-bot"
+          git config user.email "screener-bot@users.noreply.github.com"
+          git add resultados/
+          git commit -m "Resultados $(date +%F)" || echo "Sin cambios"
+          git push

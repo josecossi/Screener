@@ -1,0 +1,6 @@
+# Un ticker por línea, en formato Yahoo Finance (búscalo en finance.yahoo.com).
+# Úsalo para añadir empresas que no estén en los índices configurados.
+# Sufijos: .MC Madrid · .DE Xetra · .PA París · .MI Milán · .AS Ámsterdam · .L Londres · .LS Lisboa
+# Ejemplos (borra el # para activarlos):
+# LOG.MC
+# ROVI.MC
