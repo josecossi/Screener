@@ -1,6 +1,6 @@
 # Screener automático de acciones infravaloradas
 
-Analiza ~1.500 empresas de EE. UU. y Europa (S&P 500, S&P 400, Nasdaq-100, IBEX 35, DAX, MDAX,
+Analiza ~1.500 empresas de EE. UU. y Europa (S&P 500, S&P 400, IBEX 35, DAX, MDAX,
 CAC 40, FTSE MIB, AEX y FTSE 100), las puntúa de 0 a 100 y genera un Excel con el ranking.
 Opcionalmente te lo envía por correo.
 

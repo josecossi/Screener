@@ -50,7 +50,6 @@ CONFIG = {
     "indices": [
         ("S&P 500", "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies", ""),
         ("S&P 400 MidCap", "https://en.wikipedia.org/wiki/List_of_S%26P_400_companies", ""),
-        ("Nasdaq-100", "https://en.wikipedia.org/wiki/Nasdaq-100", ""),
         ("IBEX 35", "https://en.wikipedia.org/wiki/IBEX_35", ".MC"),
         ("DAX", "https://en.wikipedia.org/wiki/DAX", ".DE"),
         ("MDAX", "https://en.wikipedia.org/wiki/MDAX", ".DE"),
@@ -73,8 +72,8 @@ CONFIG = {
     "peso_momentum": 0.30,
     # Salida
     "top_n": 25,
-    "workers": 4,                  # descargas en paralelo (más = riesgo de bloqueo)
-    "pausa_seg": 0.3,              # pausa entre peticiones por hilo
+    "workers": 2,                  # descargas en paralelo (más = riesgo de bloqueo)
+    "pausa_seg": 0.6,              # pausa entre peticiones por hilo
 }
 
 BASE = Path(__file__).resolve().parent
@@ -249,6 +248,17 @@ def descargar(tickers: list[str]) -> pd.DataFrame:
             filas.append(fu.result())
             if k % 50 == 0 or k == n:
                 log.info("  descargados %d/%d", k, n)
+    # Segunda pasada para los que fallaron por límite de peticiones
+    fallidos = [f["ticker"] for f in filas if str(f.get("error") or "").startswith("fallo descarga")]
+    if fallidos:
+        log.info("  reintentando %d tickers fallidos tras 60 s de pausa", len(fallidos))
+        time.sleep(60)
+        rep = {}
+        for t in fallidos:
+            time.sleep(1.0)
+            rep[t] = descargar_uno(t)
+        filas = [rep.get(f["ticker"], f) for f in filas]
+        log.info("  recuperados %d/%d", sum(1 for r in rep.values() if not r.get("error")), len(fallidos))
     campos = ["ticker", "empresa", "pais", "divisa", "sector", "industria", "precio", "cap_meur", "vol_meur",
               "per", "ev_ebitda", "p_fcf", "fcf_meur", "roe", "deuda_neta_ebitda", "rent_12m", "revision", "error"]
     df = pd.DataFrame(filas).reindex(columns=campos)
