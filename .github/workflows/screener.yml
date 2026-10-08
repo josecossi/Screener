@@ -2,7 +2,7 @@ name: Screener diario
 
 on:
   schedule:
-    - cron: "17 5 * * 1-5"   # lunes a viernes 05:17 UTC (07:17 Madrid en verano, 06:17 en invierno)
+    - cron: "17 4 * * 1-5"   # lunes a viernes 04:17 UTC (06:17 Madrid en verano, 05:17 en invierno)
   workflow_dispatch:          # lanzarlo a mano desde la pestaña Actions
 
 permissions:
