@@ -72,6 +72,23 @@ Para añadir empresas sueltas, usa `tickers_extra.txt`.
 
 Umbrales y pesos son propuestas razonables, **no estándares validados empíricamente**.
 
+## Precio justo (estimaciones, no certezas)
+
+| Columna | Cálculo | Sesgos |
+|---|---|---|
+| Precio justo (múltiplos) | Precio si cotizara a la mediana de su industria (≥5 empresas; si no, sector; si no, universo) en PER, EV/EBITDA y P/FCF. Se toma la mediana de los tres. | En cíclicas con beneficios de pico (memoria, materias primas) sobrestima el valor. Hereda los errores de datos de Yahoo. |
+| Objetivo analistas | Precio objetivo medio de consenso publicado en Yahoo, con su nº de analistas. | Suele ser optimista y llega con retraso. Con menos de 3 analistas es poco representativo. |
+| Potencial | Precio justo / precio actual − 1. | — |
+| Verificar | Marca PER < 4, P/FCF < 3 o > 200, rentabilidad a 12 m > 300 %, potencial por múltiplos > 150 %, objetivo de analistas a ±100 % y menos de 3 analistas. | No excluye: avisa. |
+
+Los precios van en la divisa de cotización (GBp = peniques de libra).
+
+## Hojas del Excel
+
+- **Ranking**: Top 25 global.
+- **Europa**: Top 25 solo de valores cotizados en bolsas europeas, con su posición global.
+- **Todas**, **Excluidas** (con motivo) e **Info** (parámetros y avisos).
+
 ## Limitaciones conocidas
 
 - El universo son componentes de índices, no el catálogo exacto de Trade Republic o MyInvestor:

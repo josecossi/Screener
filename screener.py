@@ -10,8 +10,12 @@ Qué hace:
        Valoración (PER, EV/EBITDA, P/FCF frente a su sector)
        Calidad    (ROE y deuda neta/EBITDA)
        Momentum   (rentabilidad 12 m y revisiones de estimaciones de BPA)
-  4. Genera un Excel con el ranking en la carpeta resultados/ y, opcionalmente,
-     lo envía por correo.
+  4. Estima un precio "justo" de dos formas:
+       - Múltiplos comparables: precio implícito si cotizara a la mediana de su
+         industria (o sector) en PER, EV/EBITDA y P/FCF (mediana de los tres).
+       - Consenso de analistas: precio objetivo medio publicado en Yahoo.
+  5. Genera un Excel con el ranking global, un ranking solo de Europa y,
+     opcionalmente, lo envía por correo.
 
 AVISOS:
   - yfinance NO es una API oficial de Yahoo: puede fallar, cambiar o dar datos
@@ -72,6 +76,9 @@ CONFIG = {
     "peso_momentum": 0.30,
     # Salida
     "top_n": 25,
+    # Precio justo: límites al potencial por múltiplos para evitar cifras absurdas
+    # por datos erróneos (se marca "verificar" si se supera)
+    "potencial_max_verosimil": 1.5,   # +150 %
     "workers": 2,                  # descargas en paralelo (más = riesgo de bloqueo)
     "pausa_seg": 0.6,              # pausa entre peticiones por hilo
 }
@@ -89,6 +96,8 @@ log = logging.getLogger("screener")
 # 1. UNIVERSO
 # =============================================================================
 TICKER_COLS = {"symbol", "ticker", "ticker symbol", "code", "epic"}
+SUFIJOS_EUROPA = (".DE", ".F", ".PA", ".MC", ".L", ".AS", ".MI", ".SW", ".BR", ".LS", ".HE",
+                  ".CO", ".ST", ".OL", ".VI", ".IR")
 SUFIJOS_YAHOO = {".DE", ".F", ".PA", ".MC", ".L", ".AS", ".MI", ".SW", ".BR", ".LS", ".HE",
                  ".CO", ".ST", ".OL", ".VI", ".IR", ".TO", ".MX"}
 
@@ -223,6 +232,10 @@ def descargar_uno(ticker: str) -> dict:
                 "fcf_meur": fcf / 1e6 if fcf is not None else None,
                 "roe": _num(i.get("returnOnEquity")),
                 "deuda_neta_ebitda": deuda_neta / ebitda if ebitda and ebitda > 0 and deuda_neta is not None else None,
+                "ebitda_meur": ebitda / 1e6 if ebitda is not None else None,
+                "deuda_neta_meur": deuda_neta / 1e6 if deuda_neta is not None else None,
+                "objetivo_analistas": _num(i.get("targetMeanPrice")),
+                "n_analistas": _num(i.get("numberOfAnalystOpinions")),
                 "rent_12m": _num(i.get("52WeekChange")),
                 "revision": _revision(t),
                 "error": None,
@@ -238,7 +251,7 @@ def descargar(tickers: list[str]) -> pd.DataFrame:
     cache = CACHE_DIR / f"datos_{hoy}.csv"
     if cache.exists():
         df = pd.read_csv(cache)
-        if set(tickers) <= set(df["ticker"]):
+        if set(tickers) <= set(df["ticker"]) and "objetivo_analistas" in df.columns:
             log.info("Usando datos en caché de hoy (%s)", cache.name)
             return df[df["ticker"].isin(tickers)]
     filas, n = [], len(tickers)
@@ -260,7 +273,7 @@ def descargar(tickers: list[str]) -> pd.DataFrame:
         filas = [rep.get(f["ticker"], f) for f in filas]
         log.info("  recuperados %d/%d", sum(1 for r in rep.values() if not r.get("error")), len(fallidos))
     campos = ["ticker", "empresa", "pais", "divisa", "sector", "industria", "precio", "cap_meur", "vol_meur",
-              "per", "ev_ebitda", "p_fcf", "fcf_meur", "roe", "deuda_neta_ebitda", "rent_12m", "revision", "error"]
+              "per", "ev_ebitda", "p_fcf", "fcf_meur", "roe", "deuda_neta_ebitda", "rent_12m", "revision", "ebitda_meur", "deuda_neta_meur", "objetivo_analistas", "n_analistas", "error"]
     df = pd.DataFrame(filas).reindex(columns=campos)
     CACHE_DIR.mkdir(exist_ok=True)
     df.to_csv(cache, index=False)
@@ -292,6 +305,51 @@ def _pct_sector(df: pd.DataFrame, col: str) -> pd.Series:
         else:
             out.loc[idx] = universo.loc[idx]
     return out
+
+
+def _medianas_referencia(base: pd.DataFrame, col: str) -> tuple[dict, dict, float]:
+    """Medianas del múltiplo (>0) por industria y por sector, más la global.
+    Solo se usan grupos con suficientes empresas."""
+    v = base.assign(_v=base[col].where(base[col] > 0)).dropna(subset=["_v"])
+    def meds(clave, minimo):
+        g = v.groupby(clave)["_v"]
+        return g.median()[g.count() >= minimo].to_dict()
+    return meds("industria", 5), meds("sector", CONFIG["min_empresas_sector"]), v["_v"].median()
+
+
+def precio_justo(ok: pd.DataFrame, base: pd.DataFrame) -> pd.DataFrame:
+    """Precio implícito por múltiplos comparables y potencial frente al precio actual.
+    Referencia: mediana de su industria (si hay >= 5 empresas), si no de su sector,
+    si no del universo. base = todas las empresas con datos válidos (antes de los
+    filtros de calidad), para no sesgar la mediana hacia las mejores empresas.
+    Se trabaja con capitalizaciones en EUR y se traslada al precio por proporción,
+    así no influyen la divisa ni los peniques (GBp)."""
+    ok = ok.copy()
+    for col in ("per", "ev_ebitda", "p_fcf"):
+        ind, sec, glob = _medianas_referencia(base, col)
+        ok[f"med_{col}"] = ok["industria"].map(ind).fillna(ok["sector"].map(sec)).fillna(glob)
+    cap = ok["cap_meur"]
+    cap_per = cap * ok["med_per"] / ok["per"]
+    cap_fcf = cap * ok["med_p_fcf"] / ok["p_fcf"]
+    cap_ev = ok["med_ev_ebitda"] * ok["ebitda_meur"] - ok["deuda_neta_meur"]
+    implic = pd.concat([cap_per, cap_ev.where(cap_ev > 0), cap_fcf], axis=1).div(cap, axis=0)
+    ok["precio_justo_multiplos"] = (ok["precio"] * implic.median(axis=1)).round(2)
+    ok["potencial_multiplos"] = ok["precio_justo_multiplos"] / ok["precio"] - 1
+    obj = ok["objetivo_analistas"].where(ok["objetivo_analistas"] > 0)
+    ok["potencial_analistas"] = obj / ok["precio"] - 1
+    # Señales de datos posiblemente erróneos (no se excluyen, se marcan)
+    avisos = pd.Series("", index=ok.index)
+    for mask, txt in [
+        (ok["per"] < 4, "PER<4 (¿extraordinario?)"),
+        ((ok["p_fcf"] < 3) | (ok["p_fcf"] > 200), "P/FCF extremo"),
+        (ok["rent_12m"] > 3, "Rent. 12m >300%"),
+        (ok["potencial_multiplos"] > CONFIG["potencial_max_verosimil"], "Potencial múltiplos >150%"),
+        (ok["potencial_analistas"].abs() > 1, "Objetivo analistas ±100%"),
+        (ok["n_analistas"] < 3, "<3 analistas"),
+    ]:
+        avisos = avisos.mask(mask.fillna(False), (avisos + "; " + txt).str.lstrip("; "))
+    ok["verificar"] = avisos
+    return ok
 
 
 def puntuar(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
@@ -338,8 +396,12 @@ def puntuar(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
     ok["puntuacion"] = (100 * (c["peso_valoracion"] * ok["score_valoracion"]
                                + c["peso_calidad"] * ok["score_calidad"]
                                + c["peso_momentum"] * ok["score_momentum"])).round(1)
+    ok = precio_justo(ok, df.loc[df["error"].isna()])
     ok = ok.sort_values("puntuacion", ascending=False).reset_index(drop=True)
     ok.insert(0, "ranking", range(1, len(ok) + 1))
+    ok["region"] = np.where(ok["ticker"].str.upper().str.endswith(SUFIJOS_EUROPA), "Europa", "EE. UU.")
+    eu = ok["region"] == "Europa"
+    ok.loc[eu, "ranking_europa"] = range(1, int(eu.sum()) + 1)
     return ok, excluidas
 
 
@@ -350,11 +412,16 @@ COLS_RANKING = {
     "ranking": "Pos.", "ticker": "Ticker", "empresa": "Empresa", "indice": "Índice", "pais": "País",
     "sector": "Sector", "puntuacion": "Puntuación", "score_valoracion": "Valoración",
     "score_calidad": "Calidad", "score_momentum": "Momentum", "precio": "Precio", "divisa": "Divisa",
+    "precio_justo_multiplos": "Precio justo (múltiplos)", "potencial_multiplos": "Potencial múltiplos",
+    "objetivo_analistas": "Objetivo analistas", "potencial_analistas": "Potencial analistas",
+    "n_analistas": "Nº analistas", "verificar": "Verificar",
     "cap_meur": "Cap. (M€)", "per": "PER", "ev_ebitda": "EV/EBITDA", "p_fcf": "P/FCF", "roe": "ROE",
     "deuda_neta_ebitda": "DN/EBITDA", "rent_12m": "Rent. 12m", "revision": "Revisión BPA",
 }
 FORMATOS = {"Puntuación": "0.0", "Valoración": "0.00", "Calidad": "0.00", "Momentum": "0.00",
-            "Precio": "#,##0.00", "Cap. (M€)": "#,##0", "PER": "0.0x", "EV/EBITDA": "0.0x",
+            "Precio": "#,##0.00", "Precio justo (múltiplos)": "#,##0.00",
+            "Objetivo analistas": "#,##0.00", "Potencial múltiplos": "+0%;-0%", "Potencial analistas": "+0%;-0%",
+            "Nº analistas": "0", "Cap. (M€)": "#,##0", "PER": "0.0x", "EV/EBITDA": "0.0x",
             "P/FCF": "0.0x", "ROE": "0.0%", "DN/EBITDA": "0.0x", "Rent. 12m": "0.0%"}
 
 
@@ -384,6 +451,9 @@ def exportar(ok, excluidas, universo, inicio) -> Path:
     cols = [k for k in COLS_RANKING if k in ok.columns]
     top = ok[cols].head(CONFIG["top_n"]).rename(columns=COLS_RANKING)
     todas = ok[cols].rename(columns=COLS_RANKING)
+    eu = ok[ok["region"] == "Europa"]
+    europa = eu[["ranking_europa"] + cols].head(CONFIG["top_n"]).rename(
+        columns={**COLS_RANKING, "ranking_europa": "Pos. Europa", "ranking": "Pos. global"})
     info = pd.DataFrame({
         "Campo": ["Fecha de ejecución", "Duración (min)", "Empresas analizadas", "Superan filtros",
                   "Fuente de datos", "Fuente del universo", "Parámetros", "Avisos"],
@@ -394,12 +464,16 @@ def exportar(ok, excluidas, universo, inicio) -> Path:
                   str({k: v for k, v in CONFIG.items() if k != "indices"}),
                   "No es recomendación de inversión. Verifica cifras en cuentas anuales. "
                   "Comprueba que el valor está disponible en tu bróker. ROE se usa como proxy de ROIC. "
-                  "Barata no implica que vaya a subir a corto plazo."],
+                  "Barata no implica que vaya a subir a corto plazo. Precio justo (múltiplos) = precio si "
+                  "cotizara a la mediana de su industria (o sector) en PER, EV/EBITDA y P/FCF (mediana de los tres); "
+                  "en cíclicas en pico de beneficios sobrestima el valor. Objetivo analistas = media de "
+                  "consenso publicada en Yahoo (suele tener sesgo optimista). Precios en la divisa de "
+                  "cotización (GBp = peniques)."],
     })
     with pd.ExcelWriter(ruta, engine="openpyxl") as w:
-        for nombre, d in [("Ranking", top), ("Todas", todas), ("Excluidas", excluidas), ("Info", info)]:
+        for nombre, d in [("Ranking", top), ("Europa", europa), ("Todas", todas), ("Excluidas", excluidas), ("Info", info)]:
             d.to_excel(w, sheet_name=nombre, index=False)
-            if nombre in ("Ranking", "Todas"):
+            if nombre in ("Ranking", "Europa", "Todas"):
                 _formatea(w.sheets[nombre], d)
     # CSV para revisión automática y comparación entre días
     ok.to_csv(OUT_DIR / f"ranking_{datetime.now():%Y-%m-%d}.csv", index=False)
@@ -416,8 +490,15 @@ def enviar_email(ruta: Path, top: pd.DataFrame):
     msg = EmailMessage()
     msg["Subject"] = f"Screener acciones {datetime.now():%d/%m/%Y}: top {min(10, len(top))}"
     msg["From"], msg["To"] = usuario, dest
-    lineas = [f"{r.ranking:>2}. {r.ticker:<9} {str(r.empresa)[:28]:<28} {r.puntuacion:>5.1f}" for r in top.head(10).itertuples()]
-    msg.set_content("Top 10 del screener (detalle en el Excel adjunto):\n\n" + "\n".join(lineas)
+    def linea(r, pos):
+        pm = f"{r.potencial_multiplos:+.0%}" if pd.notna(r.potencial_multiplos) else "  n/d"
+        pa = f"{r.potencial_analistas:+.0%}" if pd.notna(r.potencial_analistas) else "  n/d"
+        return (f"{pos:>2}. {r.ticker:<9} {str(r.empresa)[:24]:<24} {r.puntuacion:>5.1f}  "
+                f"precio {r.precio:,.2f} {r.divisa}  múltiplos {pm}  analistas {pa}")
+    lineas = [linea(r, r.ranking) for r in top.head(10).itertuples()]
+    lineas_eu = [linea(r, int(r.ranking_europa)) for r in top[top["region"] == "Europa"].head(10).itertuples()]
+    msg.set_content("Top 10 global (detalle en el Excel adjunto):\n\n" + "\n".join(lineas)
+                    + "\n\nTop 10 Europa:\n\n" + "\n".join(lineas_eu)
                     + "\n\nAnálisis automático, no recomendación de inversión. Verifica los datos antes de operar.")
     msg.add_attachment(ruta.read_bytes(), maintype="application",
                        subtype="vnd.openxmlformats-officedocument.spreadsheetml.sheet", filename=ruta.name)
