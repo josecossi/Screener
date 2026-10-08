@@ -1,0 +1,58 @@
+05:51:12 1/4 Construyendo universo
+05:51:12   S&P 500          503 tickers
+05:51:12   S&P 400 MidCap   400 tickers
+05:51:13   IBEX 35           35 tickers
+05:51:13   DAX               40 tickers
+05:51:13   MDAX              50 tickers
+05:51:13   CAC 40            40 tickers
+05:51:13   FTSE MIB          40 tickers
+05:51:13   AEX               25 tickers
+05:51:14   FTSE 100         100 tickers
+05:51:14   Manual             0 tickers
+05:51:14 Universo total (sin duplicados): 1227
+05:51:14 2/4 Descargando datos de 1227 empresas (puede tardar 15-40 min)
+05:51:39   descargados 50/1227
+05:52:03   descargados 100/1227
+05:52:28   descargados 150/1227
+05:52:52   descargados 200/1227
+05:53:18   descargados 250/1227
+05:53:43   descargados 300/1227
+05:54:07   descargados 350/1227
+05:54:31   descargados 400/1227
+05:54:55   descargados 450/1227
+05:55:05 HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"No fundamentals data found for symbol: FOX"}}}
+05:55:19   descargados 500/1227
+05:55:44   descargados 550/1227
+05:56:09   descargados 600/1227
+05:56:33   descargados 650/1227
+05:56:58   descargados 700/1227
+05:57:23   descargados 750/1227
+05:57:47   descargados 800/1227
+05:58:12   descargados 850/1227
+05:58:37   descargados 900/1227
+05:59:01   descargados 950/1227
+05:59:25   descargados 1000/1227
+05:59:26 HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"No fundamentals data found for symbol: SKYD"}}}
+05:59:49   descargados 1050/1227
+06:00:14   descargados 1100/1227
+06:00:39   descargados 1150/1227
+06:01:03   descargados 1200/1227
+06:01:16   descargados 1227/1227
+06:01:16 3/4 Puntuando
+06:01:16    491 superan filtros, 736 excluidas
+06:01:16 4/4 Exportando
+06:01:17 Excel generado: /home/runner/work/Screener/Screener/resultados/screener_2026-10-08.xlsx
+06:01:17 Correo no configurado (variables SCREENER_EMAIL_*); se omite el envío
+
+TOP 10
+ ranking  ticker                         empresa            sector  puntuacion
+       1      MU         Micron Technology, Inc.        Technology        84.0
+       2     APA                 APA Corporation            Energy        83.7
+       3     WEX                        WEX Inc.        Technology        83.2
+       4 NDX1.DE Nordex SE                     I       Industrials        83.0
+       5  SDF.DE K+S Aktiengesellschaft        N   Basic Materials        82.3
+       6     ANF     Abercrombie & Fitch Company Consumer Cyclical        81.7
+       7    EXPE             Expedia Group, Inc. Consumer Cyclical        79.8
+       8     ULS               UL Solutions Inc.       Industrials        79.5
+       9     THC    Tenet Healthcare Corporation        Healthcare        79.1
+      10    SNDK             Sandisk Corporation        Technology        78.7
