@@ -1,57 +1,57 @@
-05:51:30 1/4 Construyendo universo
-05:51:30   S&P 500          503 tickers
-05:51:31   S&P 400 MidCap   400 tickers
-05:51:31   IBEX 35           35 tickers
-05:51:31   DAX               40 tickers
-05:51:31   MDAX              50 tickers
-05:51:31   CAC 40            40 tickers
-05:51:31   FTSE MIB          40 tickers
-05:51:31   AEX               25 tickers
-05:51:31   FTSE 100         100 tickers
-05:51:31   Manual             0 tickers
-05:51:31 Universo total (sin duplicados): 1228
-05:51:31 2/4 Descargando datos de 1228 empresas (puede tardar 15-40 min)
-05:51:52   descargados 50/1228
-05:52:13   descargados 100/1228
-05:52:34   descargados 150/1228
-05:52:55   descargados 200/1228
-05:53:16   descargados 250/1228
-05:53:37   descargados 300/1228
-05:53:58   descargados 350/1228
-05:54:19   descargados 400/1228
-05:54:39   descargados 450/1228
-05:54:48 HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"No fundamentals data found for symbol: FOX"}}}
-05:55:00   descargados 500/1228
-05:55:21   descargados 550/1228
-05:55:42   descargados 600/1228
-05:56:03   descargados 650/1228
-05:56:24   descargados 700/1228
-05:56:45   descargados 750/1228
-05:57:05   descargados 800/1228
-05:57:26   descargados 850/1228
-05:57:47   descargados 900/1228
-05:58:08   descargados 950/1228
-05:58:29   descargados 1000/1228
-05:58:50   descargados 1050/1228
-05:59:10   descargados 1100/1228
-05:59:31   descargados 1150/1228
-05:59:52   descargados 1200/1228
-06:00:04   descargados 1228/1228
-06:00:04 3/4 Puntuando
-06:00:04    482 superan filtros, 746 excluidas
-06:00:04 4/4 Exportando
-06:00:05 Excel generado: /home/runner/work/Screener/Screener/resultados/screener_2026-10-09.xlsx
-06:00:05 Correo no configurado (variables SCREENER_EMAIL_*); se omite el envío
+11:21:06 1/4 Construyendo universo
+11:21:06   S&P 500          503 tickers
+11:21:07   S&P 400 MidCap   400 tickers
+11:21:07   IBEX 35           35 tickers
+11:21:07   DAX               40 tickers
+11:21:07   MDAX              50 tickers
+11:21:07   CAC 40            40 tickers
+11:21:07   FTSE MIB          40 tickers
+11:21:07   AEX               25 tickers
+11:21:07   FTSE 100         100 tickers
+11:21:07   Manual             0 tickers
+11:21:07 Universo total (sin duplicados): 1228
+11:21:07 2/4 Descargando datos de 1228 empresas (puede tardar 15-40 min)
+11:21:29   descargados 50/1228
+11:21:50   descargados 100/1228
+11:22:11   descargados 150/1228
+11:22:31   descargados 200/1228
+11:22:52   descargados 250/1228
+11:23:14   descargados 300/1228
+11:23:35   descargados 350/1228
+11:23:55   descargados 400/1228
+11:24:17   descargados 450/1228
+11:24:25 HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"No fundamentals data found for symbol: FOX"}}}
+11:24:38   descargados 500/1228
+11:24:59   descargados 550/1228
+11:25:20   descargados 600/1228
+11:25:41   descargados 650/1228
+11:26:02   descargados 700/1228
+11:26:23   descargados 750/1228
+11:26:44   descargados 800/1228
+11:27:05   descargados 850/1228
+11:27:26   descargados 900/1228
+11:27:46   descargados 950/1228
+11:28:07   descargados 1000/1228
+11:28:28   descargados 1050/1228
+11:28:49   descargados 1100/1228
+11:29:10   descargados 1150/1228
+11:29:31   descargados 1200/1228
+11:29:43   descargados 1228/1228
+11:29:43 3/4 Puntuando
+11:29:43    492 superan filtros, 736 excluidas
+11:29:43 4/4 Exportando
+11:29:43 Excel generado: /home/runner/work/Screener/Screener/resultados/screener_2026-10-09.xlsx
+11:29:43 Correo no configurado (variables SCREENER_EMAIL_*); se omite el envío
 
 TOP 10
  ranking  ticker                         empresa            sector  puntuacion
-       1      MU         Micron Technology, Inc.        Technology        84.5
-       2     WEX                        WEX Inc.        Technology        84.0
-       3     APA                 APA Corporation            Energy        83.8
-       4 NDX1.DE Nordex SE                     I       Industrials        82.8
-       5     ANF     Abercrombie & Fitch Company Consumer Cyclical        81.5
-       6    EXPE             Expedia Group, Inc. Consumer Cyclical        80.0
-       7    SNDK             Sandisk Corporation        Technology        79.9
-       8     ULS               UL Solutions Inc.       Industrials        79.7
-       9     THC    Tenet Healthcare Corporation        Healthcare        79.6
-      10    JAZZ        Jazz Pharmaceuticals plc        Healthcare        78.4
+       1      MU         Micron Technology, Inc.        Technology        84.7
+       2     APA                 APA Corporation            Energy        84.0
+       3     WEX                        WEX Inc.        Technology        84.0
+       4 NDX1.DE Nordex SE                     I       Industrials        82.9
+       5  SDF.DE K+S Aktiengesellschaft        N   Basic Materials        82.4
+       6     ANF     Abercrombie & Fitch Company Consumer Cyclical        81.8
+       7    SNDK             Sandisk Corporation        Technology        80.1
+       8    EXPE             Expedia Group, Inc. Consumer Cyclical        80.0
+       9     ULS               UL Solutions Inc.       Industrials        79.8
+      10     THC    Tenet Healthcare Corporation        Healthcare        79.6
