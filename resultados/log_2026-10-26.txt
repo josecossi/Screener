@@ -1,0 +1,84 @@
+06:53:52 1/4 Construyendo universo
+06:53:52   S&P 500          503 tickers
+06:53:53   S&P 400 MidCap   400 tickers
+06:53:53   IBEX 35           35 tickers
+06:53:53   DAX               40 tickers
+06:53:53   MDAX              50 tickers
+06:53:53   CAC 40            40 tickers
+06:53:53   FTSE MIB          40 tickers
+06:53:53   AEX               25 tickers
+06:53:54   FTSE 100         100 tickers
+06:53:54   Manual             0 tickers
+06:53:54 Universo total (sin duplicados): 1228
+06:53:54 2/4 Descargando datos de 1228 empresas (puede tardar 15-40 min)
+/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  quotes.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.drop(
+/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.rename(columns={
+/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  quotes.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.drop(
+/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.rename(columns={
+06:54:13   descargados 50/1228
+06:54:32   descargados 100/1228
+06:54:50   descargados 150/1228
+/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  quotes.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.drop(
+/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.rename(columns={
+06:55:09   descargados 200/1228
+06:55:28   descargados 250/1228
+06:55:46   descargados 300/1228
+06:56:05   descargados 350/1228
+06:56:23   descargados 400/1228
+06:56:42   descargados 450/1228
+06:56:49 HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"No fundamentals data found for symbol: FOX"}}}
+06:57:00   descargados 500/1228
+06:57:19   descargados 550/1228
+06:57:37   descargados 600/1228
+06:57:56   descargados 650/1228
+06:58:15   descargados 700/1228
+06:58:33   descargados 750/1228
+06:58:52   descargados 800/1228
+06:59:10   descargados 850/1228
+06:59:29   descargados 900/1228
+06:59:48   descargados 950/1228
+07:00:06   descargados 1000/1228
+07:00:25   descargados 1050/1228
+07:00:43   descargados 1100/1228
+07:01:02   descargados 1150/1228
+07:01:21   descargados 1200/1228
+07:01:31   descargados 1228/1228
+07:01:31 3/4 Puntuando
+07:01:31    486 superan filtros, 742 excluidas
+07:01:31 4/4 Exportando
+07:01:32 Excel generado: /home/runner/work/Screener/Screener/resultados/screener_2026-10-26.xlsx
+07:01:32 Correo no configurado (variables SCREENER_EMAIL_*); se omite el envío
+
+TOP 10
+ ranking ticker                      empresa            sector  puntuacion
+       1     MU      Micron Technology, Inc.        Technology        88.0
+       2   SNDK          Sandisk Corporation        Technology        85.3
+       3    WEX                     WEX Inc.        Technology        85.2
+       4    APA              APA Corporation            Energy        83.6
+       5    ANF  Abercrombie & Fitch Company Consumer Cyclical        82.2
+       6 FRES.L    FRESNILLO PLC ORD USD0.50   Basic Materials        81.2
+       7   EXPE          Expedia Group, Inc. Consumer Cyclical        81.2
+       8    BMY Bristol-Myers Squibb Company        Healthcare        80.3
+       9   EXEL               Exelixis, Inc.        Healthcare        79.8
+      10    WDC  Western Digital Corporation        Technology        79.6
