@@ -1,16 +1,16 @@
-06:52:56 1/4 Construyendo universo
-06:52:57   S&P 500          503 tickers
-06:52:57   S&P 400 MidCap   400 tickers
-06:52:57   IBEX 35           35 tickers
-06:52:57   DAX               40 tickers
-06:52:57   MDAX              50 tickers
-06:52:57   CAC 40            40 tickers
-06:52:57   FTSE MIB          40 tickers
-06:52:58   AEX               25 tickers
-06:52:58   FTSE 100         100 tickers
-06:52:58   Manual             0 tickers
-06:52:58 Universo total (sin duplicados): 1228
-06:52:58 2/4 Descargando datos de 1228 empresas (puede tardar 15-40 min)
+09:50:35 1/4 Construyendo universo
+09:50:35   S&P 500          503 tickers
+09:50:35   S&P 400 MidCap   400 tickers
+09:50:35   IBEX 35           35 tickers
+09:50:35   DAX               40 tickers
+09:50:35   MDAX              50 tickers
+09:50:35   CAC 40            40 tickers
+09:50:36   FTSE MIB          40 tickers
+09:50:36   AEX               25 tickers
+09:50:36   FTSE 100         100 tickers
+09:50:36   Manual             0 tickers
+09:50:36 Universo total (sin duplicados): 1228
+09:50:36 2/4 Descargando datos de 1228 empresas (puede tardar 15-40 min)
 /opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
 See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
   quotes.sort_index(inplace=True)
@@ -29,9 +29,9 @@ See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace 
 /opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
 See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
   df.rename(columns={
-06:53:20   descargados 50/1228
-06:53:41   descargados 100/1228
-06:54:02   descargados 150/1228
+09:50:57   descargados 50/1228
+09:51:17   descargados 100/1228
+09:51:37   descargados 150/1228
 /opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
 See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
   quotes.sort_index(inplace=True)
@@ -41,34 +41,34 @@ See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace 
 /opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
 See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
   df.rename(columns={
-06:54:23   descargados 200/1228
-06:54:44   descargados 250/1228
-06:55:05   descargados 300/1228
-06:55:26   descargados 350/1228
-06:55:47   descargados 400/1228
-06:56:08   descargados 450/1228
-06:56:17 HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"No fundamentals data found for symbol: FOX"}}}
-06:56:29   descargados 500/1228
-06:56:51   descargados 550/1228
-06:57:12   descargados 600/1228
-06:57:33   descargados 650/1228
-06:57:54   descargados 700/1228
-06:58:15   descargados 750/1228
-06:58:36   descargados 800/1228
-06:58:57   descargados 850/1228
-06:59:18   descargados 900/1228
-06:59:39   descargados 950/1228
-07:00:00   descargados 1000/1228
-07:00:23   descargados 1050/1228
-07:00:44   descargados 1100/1228
-07:01:05   descargados 1150/1228
-07:01:26   descargados 1200/1228
-07:01:38   descargados 1228/1228
-07:01:38 3/4 Puntuando
-07:01:38    478 superan filtros, 750 excluidas
-07:01:38 4/4 Exportando
-07:01:39 Excel generado: /home/runner/work/Screener/Screener/resultados/screener_2026-10-27.xlsx
-07:01:39 Correo no configurado (variables SCREENER_EMAIL_*); se omite el envío
+09:51:58   descargados 200/1228
+09:52:18   descargados 250/1228
+09:52:39   descargados 300/1228
+09:52:59   descargados 350/1228
+09:53:19   descargados 400/1228
+09:53:40   descargados 450/1228
+09:53:48 HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"No fundamentals data found for symbol: FOX"}}}
+09:54:00   descargados 500/1228
+09:54:23   descargados 550/1228
+09:54:43   descargados 600/1228
+09:55:04   descargados 650/1228
+09:55:24   descargados 700/1228
+09:55:44   descargados 750/1228
+09:56:05   descargados 800/1228
+09:56:25   descargados 850/1228
+09:56:45   descargados 900/1228
+09:57:06   descargados 950/1228
+09:57:26   descargados 1000/1228
+09:57:46   descargados 1050/1228
+09:58:06   descargados 1100/1228
+09:58:27   descargados 1150/1228
+09:58:47   descargados 1200/1228
+09:58:58   descargados 1228/1228
+09:58:58 3/4 Puntuando
+09:58:58    477 superan filtros, 751 excluidas
+09:58:58 4/4 Exportando
+09:58:59 Excel generado: /home/runner/work/Screener/Screener/resultados/screener_2026-10-27.xlsx
+09:58:59 Correo no configurado (variables SCREENER_EMAIL_*); se omite el envío
 
 TOP 10
  ranking ticker                      empresa            sector  puntuacion
@@ -76,8 +76,8 @@ TOP 10
        2   SNDK          Sandisk Corporation        Technology        85.4
        3    WEX                     WEX Inc.        Technology        84.6
        4    APA              APA Corporation            Energy        83.8
-       5    ANF  Abercrombie & Fitch Company Consumer Cyclical        81.5
-       6   EXPE          Expedia Group, Inc. Consumer Cyclical        81.4
+       5   EXPE          Expedia Group, Inc. Consumer Cyclical        81.5
+       6    ANF  Abercrombie & Fitch Company Consumer Cyclical        81.5
        7    BMY Bristol-Myers Squibb Company        Healthcare        80.4
        8   EXEL               Exelixis, Inc.        Healthcare        79.2
        9   CROX                  Crocs, Inc. Consumer Cyclical        78.9
