@@ -6,7 +6,7 @@ AAL.L,ANGLO AMERICAN PLC ORD USD0.623,Basic Materials,ROE bajo o desconocido
 AAON,"AAON, Inc.",Industrials,FCF negativo o desconocido
 ABBV,AbbVie Inc.,Healthcare,FCF negativo o desconocido
 ABDN.L,ABERDEEN GROUP PLC ORD 13 61/63,Financial Services,Sector financiero (métricas no aplicables)
-ABF.L,ASSOCIATED BRITISH FOODS PLC OR,Consumer Defensive,ROE bajo o desconocido
+ABF.L,ASSOCIATED BRITISH FOODS PLC OR,Consumer Defensive,FCF negativo o desconocido
 ABN.AS,ABN AMRO BANK N.V.,Financial Services,Sector financiero (métricas no aplicables)
 ABT,Abbott Laboratories,Healthcare,FCF negativo o desconocido
 AC.PA,ACCOR,Consumer Cyclical,FCF negativo o desconocido
@@ -15,11 +15,12 @@ ACGL,Arch Capital Group Ltd.,Financial Services,Sector financiero (métricas no 
 ACI,"Albertsons Companies, Inc.",Consumer Defensive,Deuda neta/EBITDA alta o desconocida
 ACX.MC,"ACERINOX, S.A.",Basic Materials,FCF negativo o desconocido
 ADC,Agree Realty Corporation,Real Estate,Deuda neta/EBITDA alta o desconocida
-ADM,Archer-Daniels-Midland Company,Consumer Defensive,ROE bajo o desconocido
+ADM,Archer-Daniels-Midland Company,Consumer Defensive,FCF negativo o desconocido
 ADM.L,ADMIRAL GROUP PLC ORD 0.1P,Financial Services,Sector financiero (métricas no aplicables)
 ADS.DE,adidas AG                     N,Consumer Cyclical,FCF negativo o desconocido
 ADYEN.AS,ADYEN,Technology,FCF negativo o desconocido
 AEE,Ameren Corporation,Utilities,FCF negativo o desconocido
+AEIS,"Advanced Energy Industries, Inc",Industrials,FCF negativo o desconocido
 AEP,American Electric Power Company,Utilities,FCF negativo o desconocido
 AES,The AES Corporation,Utilities,FCF negativo o desconocido
 AFG,"American Financial Group, Inc.",Financial Services,Sector financiero (métricas no aplicables)
@@ -34,16 +35,16 @@ AIXA.DE,AIXTRON SE                    N,Technology,ROE bajo o desconocido
 AIZ,"Assurant, Inc.",Financial Services,Sector financiero (métricas no aplicables)
 AJG,Arthur J. Gallagher & Co.,Financial Services,Sector financiero (métricas no aplicables)
 AKAM,"Akamai Technologies, Inc.",Technology,Deuda neta/EBITDA alta o desconocida
-ALB,Albemarle Corporation,Basic Materials,ROE bajo o desconocido
 ALGM,"Allegro MicroSystems, Inc.",Technology,ROE bajo o desconocido
+ALB,Albemarle Corporation,Basic Materials,ROE bajo o desconocido
 ALK,"Alaska Air Group, Inc.",Industrials,FCF negativo o desconocido
 ALL,Allstate Corporation (The),Financial Services,Sector financiero (métricas no aplicables)
 ALLY,Ally Financial Inc.,Financial Services,Sector financiero (métricas no aplicables)
-ALSN,"Allison Transmission Holdings, ",Consumer Cyclical,Deuda neta/EBITDA alta o desconocida
 ALV.DE,Allianz SE                    v,Financial Services,Sector financiero (métricas no aplicables)
 AM,Antero Midstream Corporation,Energy,Deuda neta/EBITDA alta o desconocida
 ALW.L,ALLIANCE WITAN PLC ORD 2.5P,Desconocido,FCF negativo o desconocido
 AMCR,Amcor plc,Consumer Cyclical,Deuda neta/EBITDA alta o desconocida
+AME,"AMETEK, Inc.",Industrials,FCF negativo o desconocido
 AMG,"Affiliated Managers Group, Inc.",Financial Services,Sector financiero (métricas no aplicables)
 AMH,American Homes 4 Rent,Real Estate,Deuda neta/EBITDA alta o desconocida
 AMKR,"Amkor Technology, Inc.",Technology,FCF negativo o desconocido
@@ -58,7 +59,6 @@ AON,Aon plc,Financial Services,Sector financiero (métricas no aplicables)
 APD,"Air Products and Chemicals, Inc",Basic Materials,FCF negativo o desconocido
 APG,APi Group Corporation,Industrials,Deuda neta/EBITDA alta o desconocida
 APO,"Apollo Global Management, Inc. ",Financial Services,Sector financiero (métricas no aplicables)
-APTV,Aptiv PLC,Consumer Cyclical,ROE bajo o desconocido
 ARE,Alexandria Real Estate Equities,Real Estate,Deuda neta/EBITDA alta o desconocida
 ARES,Ares Management Corporation,Financial Services,Sector financiero (métricas no aplicables)
 ARMK,Aramark,Industrials,Deuda neta/EBITDA alta o desconocida
@@ -76,13 +76,13 @@ AVNT,Avient Corporation,Basic Materials,ROE bajo o desconocido
 AVT,"Avnet, Inc.",Technology,FCF negativo o desconocido
 AVTR,"Avantor, Inc.",Healthcare,Deuda neta/EBITDA alta o desconocida
 AWK,"American Water Works Company, I",Utilities,FCF negativo o desconocido
-AXP,American Express Company,Financial Services,Sector financiero (métricas no aplicables)
 AXON,"Axon Enterprise, Inc.",Industrials,Deuda neta/EBITDA alta o desconocida
+AXP,American Express Company,Financial Services,Sector financiero (métricas no aplicables)
 AZM.MI,AZIMUT,Financial Services,Sector financiero (métricas no aplicables)
 AZO,"AutoZone, Inc.",Consumer Cyclical,ROE bajo o desconocido
 BA,Boeing Company (The),Industrials,Deuda neta/EBITDA alta o desconocida
-BAC,Bank of America Corporation,Financial Services,Sector financiero (métricas no aplicables)
 BAH,Booz Allen Hamilton Holding Cor,Industrials,Deuda neta/EBITDA alta o desconocida
+BAC,Bank of America Corporation,Financial Services,Sector financiero (métricas no aplicables)
 BALL,Ball Corporation,Consumer Cyclical,Deuda neta/EBITDA alta o desconocida
 BAMI.MI,BANCO BPM,Financial Services,Sector financiero (métricas no aplicables)
 BARC.L,BARCLAYS PLC ORD 25P,Financial Services,Sector financiero (métricas no aplicables)
@@ -93,8 +93,8 @@ BBOX.L,TRITAX BIG BOX REIT PLC ORD 1P,Desconocido,FCF negativo o desconocido
 BBVA.MC,BANCO BILBAO VIZCAYA ARGENTARIA,Financial Services,Sector financiero (métricas no aplicables)
 BBWI,"Bath & Body Works, Inc.",Consumer Cyclical,Deuda neta/EBITDA alta o desconocida
 BC.MI,BRUNELLO CUCINELLI,Consumer Cyclical,Deuda neta/EBITDA alta o desconocida
-BCO,Brinks Company (The),Industrials,Deuda neta/EBITDA alta o desconocida
 BC8.DE,BECHTLE AG                    I,Technology,Capitalización insuficiente o desconocida
+BCO,Brinks Company (The),Industrials,Deuda neta/EBITDA alta o desconocida
 BDC,Belden Inc,Technology,Deuda neta/EBITDA alta o desconocida
 BDX,"Becton, Dickinson and Company",Healthcare,ROE bajo o desconocido
 BE,Bloom Energy Corporation,Industrials,FCF negativo o desconocido
@@ -112,7 +112,7 @@ BLK,"BlackRock, Inc.",Financial Services,Sector financiero (métricas no aplicab
 BLND.L,BRITISH LAND COMPANY PLC ORD 25,Real Estate,Deuda neta/EBITDA alta o desconocida
 BMED.MI,BANCA MEDIOLANUM,Financial Services,Sector financiero (métricas no aplicables)
 BMPS.MI,BANCA MONTE PASCHI SIENA,Financial Services,Sector financiero (métricas no aplicables)
-BMRN,BioMarin Pharmaceutical Inc.,Healthcare,Deuda neta/EBITDA alta o desconocida
+BMRN,BioMarin Pharmaceutical Inc.,Healthcare,FCF negativo o desconocido
 BMW.DE,BAYERISCHE MOTOREN WERKE AG   S,Consumer Cyclical,Deuda neta/EBITDA alta o desconocida
 BNP.PA,BNP PARIBAS ACT.A,Financial Services,Sector financiero (métricas no aplicables)
 BNR.DE,Brenntag SE                   N,Basic Materials,ROE bajo o desconocido
@@ -123,7 +123,6 @@ BRK-B,Berkshire Hathaway Inc. New,Financial Services,Sector financiero (métrica
 BRKR,Bruker Corporation,Healthcare,Deuda neta/EBITDA alta o desconocida
 BRO,"Brown & Brown, Inc.",Financial Services,Sector financiero (métricas no aplicables)
 BRX,Brixmor Property Group Inc.,Real Estate,Deuda neta/EBITDA alta o desconocida
-BSX,Boston Scientific Corporation,Healthcare,FCF negativo o desconocido
 BT-A.L,BT GROUP PLC ORD 5P,Communication Services,Deuda neta/EBITDA alta o desconocida
 BTRW.L,BARRATT REDROW PLC ORD 10P,Consumer Cyclical,ROE bajo o desconocido
 BURL,"Burlington Stores, Inc.",Consumer Cyclical,Deuda neta/EBITDA alta o desconocida
@@ -163,22 +162,22 @@ CLNX.MC,"CELLNEX TELECOM, S.A.",Real Estate,Deuda neta/EBITDA alta o desconocida
 CLX,Clorox Company (The),Consumer Defensive,Deuda neta/EBITDA alta o desconocida
 CME,CME Group Inc.,Financial Services,Sector financiero (métricas no aplicables)
 CMS,CMS Energy Corporation,Utilities,FCF negativo o desconocido
-CNH,CNH Industrial N.V.,Industrials,Deuda neta/EBITDA alta o desconocida
 CNC,Centene Corporation,Healthcare,ROE bajo o desconocido
+CNH,CNH Industrial N.V.,Industrials,Deuda neta/EBITDA alta o desconocida
 CNO,"CNO Financial Group, Inc.",Financial Services,Sector financiero (métricas no aplicables)
 CNP,"CenterPoint Energy, Inc (Holdin",Utilities,FCF negativo o desconocido
-COHR,Coherent Corp.,Technology,FCF negativo o desconocido
 COF,Capital One Financial Corporati,Financial Services,Sector financiero (métricas no aplicables)
+COHR,Coherent Corp.,Technology,FCF negativo o desconocido
 COIN,"Coinbase Global, Inc.",Financial Services,Sector financiero (métricas no aplicables)
 COL.MC,"COLONIAL SFL, SOCIMI. S.A.",Real Estate,Deuda neta/EBITDA alta o desconocida
 COLB,"Columbia Banking System, Inc.",Financial Services,Sector financiero (métricas no aplicables)
-CON.DE,CONTINENTAL AG                I,Consumer Cyclical,ROE bajo o desconocido
+CON.DE,CONTINENTAL AG                I,Consumer Cyclical,Capitalización insuficiente o desconocida
 COO,"The Cooper Companies, Inc.",Healthcare,ROE bajo o desconocido
 CORT,Corcept Therapeutics Incorporat,Healthcare,ROE bajo o desconocido
 CPR.MI,CAMPARI,Consumer Defensive,Deuda neta/EBITDA alta o desconocida
 CPT,Camden Property Trust,Real Estate,Deuda neta/EBITDA alta o desconocida
 CRBG,Corebridge Financial Inc.,Financial Services,Sector financiero (métricas no aplicables)
-CRDA.L,CRODA INTERNATIONAL PLC ORD 10.,Basic Materials,ROE bajo o desconocido
+CRDA.L,CRODA INTERNATIONAL PLC ORD 10.,Basic Materials,Capitalización insuficiente o desconocida
 CRL,Charles River Laboratories Inte,Healthcare,Deuda neta/EBITDA alta o desconocida
 CRWD,"CrowdStrike Holdings, Inc.",Technology,ROE bajo o desconocido
 CS.PA,AXA,Financial Services,Sector financiero (métricas no aplicables)
@@ -188,8 +187,8 @@ CTEC.L,CONVATEC GROUP PLC ORD 10P,Healthcare,ROE bajo o desconocido
 CTVA,"Corteva, Inc.",Basic Materials,FCF negativo o desconocido
 CUBE,CubeSmart,Real Estate,Deuda neta/EBITDA alta o desconocida
 CUZ,Cousins Properties Incorporated,Real Estate,Deuda neta/EBITDA alta o desconocida
-CVS,CVS Health Corporation,Healthcare,Deuda neta/EBITDA alta o desconocida
 CVX,Chevron Corporation,Energy,FCF negativo o desconocido
+CVS,CVS Health Corporation,Healthcare,Deuda neta/EBITDA alta o desconocida
 CYTK,"Cytokinetics, Incorporated",Healthcare,FCF negativo o desconocido
 D,"Dominion Energy, Inc.",Utilities,FCF negativo o desconocido
 DAR,Darling Ingredients Inc.,Consumer Defensive,FCF negativo o desconocido
@@ -208,8 +207,8 @@ DIS,Walt Disney Company (The),Communication Services,ROE bajo o desconocido
 DKS,Dick's Sporting Goods Inc,Consumer Cyclical,FCF negativo o desconocido
 DLB,Dolby Laboratories,Industrials,ROE bajo o desconocido
 DLR,"Digital Realty Trust, Inc.",Real Estate,Deuda neta/EBITDA alta o desconocida
-DOC,"Healthpeak Properties, Inc.",Real Estate,Deuda neta/EBITDA alta o desconocida
-DOCN,"DigitalOcean Holdings, Inc.",Technology,FCF negativo o desconocido
+DOC,"Healthpeak Properties, Inc.",Real Estate,FCF negativo o desconocido
+DOCN,"DigitalOcean Holdings, Inc.",Technology,Deuda neta/EBITDA alta o desconocida
 DOW,Dow Inc.,Basic Materials,Deuda neta/EBITDA alta o desconocida
 DPZ,Domino's Pizza Inc,Consumer Cyclical,Deuda neta/EBITDA alta o desconocida
 DRI,"Darden Restaurants, Inc.",Consumer Cyclical,Deuda neta/EBITDA alta o desconocida
@@ -229,7 +228,7 @@ EEFT,"Euronet Worldwide, Inc.",Technology,FCF negativo o desconocido
 EG,"Everest Group, Ltd.",Financial Services,Sector financiero (métricas no aplicables)
 EGP,"EastGroup Properties, Inc.",Real Estate,Deuda neta/EBITDA alta o desconocida
 EIX,Edison International,Utilities,FCF negativo o desconocido
-EL,"Estee Lauder Companies, Inc. (T",Consumer Defensive,FCF negativo o desconocido
+EL,"Estee Lauder Companies, Inc. (T",Consumer Defensive,ROE bajo o desconocido
 EL.PA,ESSILORLUXOTTICA,Healthcare,ROE bajo o desconocido
 ELAN,Elanco Animal Health Incorporat,Healthcare,Deuda neta/EBITDA alta o desconocida
 ELF,"e.l.f. Beauty, Inc.",Consumer Defensive,ROE bajo o desconocido
@@ -243,14 +242,14 @@ ENTG,"Entegris, Inc.",Technology,Deuda neta/EBITDA alta o desconocida
 ENX.PA,EURONEXT,Financial Services,Sector financiero (métricas no aplicables)
 EOAN.DE,E.ON SE                       N,Utilities,FCF negativo o desconocido
 EPR,EPR Properties,Real Estate,Deuda neta/EBITDA alta o desconocida
-EQH,"Equitable Holdings, Inc.",Financial Services,Sector financiero (métricas no aplicables)
 EQIX,"Equinix, Inc.",Real Estate,Deuda neta/EBITDA alta o desconocida
+EQH,"Equitable Holdings, Inc.",Financial Services,Sector financiero (métricas no aplicables)
 ERIE,Erie Indemnity Company,Financial Services,Sector financiero (métricas no aplicables)
 ES,Eversource Energy (D/B/A),Utilities,Deuda neta/EBITDA alta o desconocida
 ESAB,ESAB Corporation,Industrials,Deuda neta/EBITDA alta o desconocida
 ESNT,Essent Group Ltd.,Financial Services,Sector financiero (métricas no aplicables)
 ESS,"Essex Property Trust, Inc.",Real Estate,Deuda neta/EBITDA alta o desconocida
-ETN,"Eaton Corporation, PLC",Industrials,Deuda neta/EBITDA alta o desconocida
+ETN,"Eaton Corporation, PLC",Industrials,FCF negativo o desconocido
 ETR,Entergy Corporation,Utilities,FCF negativo o desconocido
 EVK.DE,Evonik Industries AG          N,Basic Materials,ROE bajo o desconocido
 EVR,Evercore Inc.,Financial Services,Sector financiero (métricas no aplicables)
@@ -285,7 +284,7 @@ FISV,"Fiserv, Inc.",Desconocido,FCF negativo o desconocido
 FITB,Fifth Third Bancorp,Financial Services,Sector financiero (métricas no aplicables)
 FLG,"Flagstar Bank, N.A.",Financial Services,Sector financiero (métricas no aplicables)
 FLR,Fluor Corporation,Industrials,Deuda neta/EBITDA alta o desconocida
-FME.DE,Fresenius Medical Care AG     I,Healthcare,Deuda neta/EBITDA alta o desconocida
+FME.DE,Fresenius Medical Care AG     I,Healthcare,FCF negativo o desconocido
 FN,Fabrinet,Technology,FCF negativo o desconocido
 FNB,F.N.B. Corporation,Financial Services,Sector financiero (métricas no aplicables)
 FND,"Floor & Decor Holdings, Inc.",Consumer Cyclical,Deuda neta/EBITDA alta o desconocida
@@ -293,9 +292,11 @@ FNF,"Fidelity National Financial, In",Financial Services,Sector financiero (mét
 FOUR,"Shift4 Payments, Inc.",Technology,Deuda neta/EBITDA alta o desconocida
 FR,"First Industrial Realty Trust, ",Real Estate,Deuda neta/EBITDA alta o desconocida
 FRA.DE,Fraport AG Ffm.Airport.Ser.AG I,Industrials,FCF negativo o desconocido
-FRE.DE,Fresenius SE & Co. KGaA       N,Healthcare,Deuda neta/EBITDA alta o desconocida
+FRE.DE,Fresenius SE & Co. KGaA       N,Healthcare,Capitalización insuficiente o desconocida
+FRES.L,FRESNILLO PLC ORD USD0.50,Basic Materials,Capitalización insuficiente o desconocida
 FRT,Federal Realty Investment Trust,Real Estate,Deuda neta/EBITDA alta o desconocida
 G.MI,GENERALI,Financial Services,Sector financiero (métricas no aplicables)
+G1A.DE,GEA Group AG                  I,Industrials,Capitalización insuficiente o desconocida
 GATX,GATX Corporation,Industrials,FCF negativo o desconocido
 GBCI,"Glacier Bancorp, Inc.",Financial Services,Sector financiero (métricas no aplicables)
 GDDY,GoDaddy Inc.,Technology,ROE bajo o desconocido
@@ -329,8 +330,9 @@ HFG.DE,HelloFresh SE                 I,Consumer Defensive,Capitalización insufi
 HGV,Hilton Grand Vacations Inc.,Consumer Cyclical,Deuda neta/EBITDA alta o desconocida
 HIG,"The Hartford Insurance Group, I",Financial Services,Sector financiero (métricas no aplicables)
 HIMS,"Hims & Hers Health, Inc.",Healthcare,Deuda neta/EBITDA alta o desconocida
-HLE.DE,HELLA GmbH & Co. KGaA         I,Consumer Cyclical,Liquidez insuficiente o desconocida
+HLE.DE,HELLA GmbH & Co. KGaA         I,Consumer Cyclical,Capitalización insuficiente o desconocida
 HLI,"Houlihan Lokey, Inc.",Financial Services,Sector financiero (métricas no aplicables)
+HLMA.L,HALMA PLC ORD 10P,Industrials,Capitalización insuficiente o desconocida
 HLNE,Hamilton Lane Incorporated,Financial Services,Sector financiero (métricas no aplicables)
 HLT,Hilton Worldwide Holdings Inc.,Consumer Cyclical,Deuda neta/EBITDA alta o desconocida
 HNR1.DE,HANNOVER RUECK SE NA O.N.,Financial Services,Sector financiero (métricas no aplicables)
@@ -374,12 +376,15 @@ IP,International Paper Company,Consumer Cyclical,ROE bajo o desconocido
 IPGP,IPG Photonics Corporation,Technology,ROE bajo o desconocido
 IQV,"IQVIA Holdings, Inc.",Healthcare,Deuda neta/EBITDA alta o desconocida
 IRM,Iron Mountain Incorporated (Del,Real Estate,FCF negativo o desconocido
-IRT,"Independence Realty Trust, Inc.",Real Estate,Deuda neta/EBITDA alta o desconocida
+IRT,"Independence Realty Trust, Inc.",Real Estate,FCF negativo o desconocido
 ISP.MI,INTESA SANPAOLO,Financial Services,Sector financiero (métricas no aplicables)
-ITT,ITT Inc.,Industrials,Deuda neta/EBITDA alta o desconocida
+IT,"Gartner, Inc.",Technology,FCF negativo o desconocido
+ITRK.L,INTERTEK GROUP PLC ORD 1P,Industrials,Capitalización insuficiente o desconocida
+ITT,ITT Inc.,Industrials,Capitalización insuficiente o desconocida
 IVG.MI,IVECO GROUP,Industrials,Deuda neta/EBITDA alta o desconocida
 IVZ,Invesco Ltd,Financial Services,Sector financiero (métricas no aplicables)
 J,Jacobs Solutions Inc.,Industrials,ROE bajo o desconocido
+JAZZ,Jazz Pharmaceuticals plc,Healthcare,ROE bajo o desconocido
 JEF,Jefferies Financial Group Inc.,Financial Services,Sector financiero (métricas no aplicables)
 JEN.DE,JENOPTIK AG                   N,Technology,ROE bajo o desconocido
 JPM,JP Morgan Chase & Co.,Financial Services,Sector financiero (métricas no aplicables)
@@ -397,15 +402,15 @@ KHC,The Kraft Heinz Company,Consumer Defensive,ROE bajo o desconocido
 KIM,Kimco Realty Corporation (HC),Real Estate,Deuda neta/EBITDA alta o desconocida
 KKR,KKR & Co. Inc.,Financial Services,Sector financiero (métricas no aplicables)
 KMI,"Kinder Morgan, Inc.",Energy,Deuda neta/EBITDA alta o desconocida
-KNF,Knife Riv Holding Co.,Basic Materials,FCF negativo o desconocido
 KNSL,"Kinsale Capital Group, Inc.",Financial Services,Sector financiero (métricas no aplicables)
+KNF,Knife Riv Holding Co.,Basic Materials,FCF negativo o desconocido
 KNX,Knight-Swift Transportation Hol,Industrials,ROE bajo o desconocido
 KRC,Kilroy Realty Corporation,Real Estate,Deuda neta/EBITDA alta o desconocida
 KRG,Kite Realty Group Trust,Real Estate,Deuda neta/EBITDA alta o desconocida
 KTOS,Kratos Defense & Security Solut,Industrials,FCF negativo o desconocido
 L,Loews Corporation,Financial Services,Sector financiero (métricas no aplicables)
-LAMR,Lamar Advertising Company,Real Estate,Deuda neta/EBITDA alta o desconocida
 LAD,"Lithia Motors, Inc.",Consumer Cyclical,Deuda neta/EBITDA alta o desconocida
+LAMR,Lamar Advertising Company,Real Estate,Deuda neta/EBITDA alta o desconocida
 LAND.L,LAND SECURITIES GROUP PLC ORD 1,Real Estate,Deuda neta/EBITDA alta o desconocida
 LEG.DE,LEG Immobilien SE             N,Real Estate,Deuda neta/EBITDA alta o desconocida
 LEN,Lennar Corporation,Consumer Cyclical,ROE bajo o desconocido
@@ -417,17 +422,17 @@ LLOY.L,LLOYDS BANKING GROUP PLC ORD 10,Financial Services,Sector financiero (mé
 LMP.L,LONDONMETRIC PROPERTY PLC ORD 1,Real Estate,Deuda neta/EBITDA alta o desconocida
 LNT,Alliant Energy Corporation,Utilities,FCF negativo o desconocido
 LOG.MC,COMPA...IA DE DISTRIBUCION INTE,Industrials,FCF negativo o desconocido
-LPX,Louisiana-Pacific Corporation,Industrials,FCF negativo o desconocido
 LOW,"Lowe's Companies, Inc.",Consumer Cyclical,Deuda neta/EBITDA alta o desconocida
-LSCC,Lattice Semiconductor Corporati,Technology,ROE bajo o desconocido
+LPX,Louisiana-Pacific Corporation,Industrials,ROE bajo o desconocido
+LSCC,Lattice Semiconductor Corporati,Technology,Deuda neta/EBITDA alta o desconocida
 LSEG.L,LONDON STOCK EXCHANGE GROUP PLC,Financial Services,Sector financiero (métricas no aplicables)
 LTMC.MI,LOTTOMATICA GROUP,Consumer Cyclical,Deuda neta/EBITDA alta o desconocida
 LUV,Southwest Airlines Company,Industrials,FCF negativo o desconocido
-LXS.DE,LANXESS AG                    I,Basic Materials,Deuda neta/EBITDA alta o desconocida
+LXS.DE,LANXESS AG                    I,Basic Materials,Capitalización insuficiente o desconocida
 MA,Mastercard Incorporated,Financial Services,Sector financiero (métricas no aplicables)
 MAA,Mid-America Apartment Communiti,Real Estate,Deuda neta/EBITDA alta o desconocida
 MAP.MC,"MAPFRE, S.A.",Financial Services,Sector financiero (métricas no aplicables)
-MAR,Marriott International,Consumer Cyclical,FCF negativo o desconocido
+MAR,Marriott International,Consumer Cyclical,Deuda neta/EBITDA alta o desconocida
 MAS,Masco Corporation,Industrials,ROE bajo o desconocido
 MAT,"Mattel, Inc.",Consumer Cyclical,Deuda neta/EBITDA alta o desconocida
 MB.MI,MEDIOBANCA,Financial Services,Sector financiero (métricas no aplicables)
@@ -449,6 +454,7 @@ MOH,Molina Healthcare Inc,Healthcare,ROE bajo o desconocido
 MORN,"Morningstar, Inc.",Financial Services,Sector financiero (métricas no aplicables)
 MOS,Mosaic Company (The),Basic Materials,FCF negativo o desconocido
 MP,MP Materials Corp.,Basic Materials,FCF negativo o desconocido
+MPC,Marathon Petroleum Corporation,Energy,FCF negativo o desconocido
 MPWR,"Monolithic Power Systems, Inc.",Technology,FCF negativo o desconocido
 MRK,"Merck & Company, Inc.",Healthcare,FCF negativo o desconocido
 MRK.DE,MERCK KGAA                    I,Healthcare,ROE bajo o desconocido
@@ -458,6 +464,7 @@ MRO.L,MELROSE INDUSTRIES PLC ORD GBP0,Industrials,ROE bajo o desconocido
 MRSH,Marsh,Financial Services,Sector financiero (métricas no aplicables)
 MS,Morgan Stanley,Financial Services,Sector financiero (métricas no aplicables)
 MSCI,MSCI Inc.,Financial Services,Sector financiero (métricas no aplicables)
+MSM,"MSC Industrial Direct Company, ",Industrials,Capitalización insuficiente o desconocida
 MT.AS,ARCELORMITTAL SA,Basic Materials,FCF negativo o desconocido
 MTB,M&T Bank Corporation,Financial Services,Sector financiero (métricas no aplicables)
 MTD,"Mettler-Toledo International, I",Healthcare,ROE bajo o desconocido
@@ -469,6 +476,7 @@ MTS.MC,ARCELORMITTAL SA,Basic Materials,FCF negativo o desconocido
 MTZ,"MasTec, Inc.",Industrials,Deuda neta/EBITDA alta o desconocida
 MUR,Murphy Oil Corporation,Energy,ROE bajo o desconocido
 MUV2.DE,MUENCHENER RUECKVERS.-GES. AG N,Financial Services,Sector financiero (métricas no aplicables)
+MZTI,The Marzetti Company,Consumer Defensive,FCF negativo o desconocido
 NCLH,Norwegian Cruise Line Holdings ,Consumer Cyclical,FCF negativo o desconocido
 NDA.DE,Aurubis AG                    I,Industrials,FCF negativo o desconocido
 NDAQ,"Nasdaq, Inc.",Financial Services,Sector financiero (métricas no aplicables)
@@ -493,7 +501,7 @@ NWG.L,NATWEST GROUP PLC ORD 107.69P,Financial Services,Sector financiero (métri
 NWS,News Corporation,Communication Services,ROE bajo o desconocido
 NWSA,News Corporation,Communication Services,ROE bajo o desconocido
 NXST,"Nexstar Media Group, Inc.",Communication Services,Deuda neta/EBITDA alta o desconocida
-O,Realty Income Corporation,Real Estate,Deuda neta/EBITDA alta o desconocida
+O,Realty Income Corporation,Real Estate,FCF negativo o desconocido
 OC,Owens Corning Inc,Industrials,ROE bajo o desconocido
 ODFL,"Old Dominion Freight Line, Inc.",Industrials,FCF negativo o desconocido
 OGE,OGE Energy Corp,Utilities,Deuda neta/EBITDA alta o desconocida
@@ -521,12 +529,13 @@ PB,"Prosperity Bancshares, Inc.",Financial Services,Sector financiero (métricas
 PCG,Pacific Gas & Electric Co.,Utilities,FCF negativo o desconocido
 PCT.L,POLAR CAPITAL TECHNOLOGY TRUST ,Desconocido,FCF negativo o desconocido
 PEG,Public Service Enterprise Group,Utilities,FCF negativo o desconocido
-PFE,"Pfizer, Inc.",Healthcare,ROE bajo o desconocido
 PFG,Principal Financial Group Inc,Financial Services,Sector financiero (métricas no aplicables)
+PFE,"Pfizer, Inc.",Healthcare,FCF negativo o desconocido
 PFGC,Performance Food Group Company,Consumer Defensive,Deuda neta/EBITDA alta o desconocida
 PGR,Progressive Corporation (The),Financial Services,Sector financiero (métricas no aplicables)
-PII,Polaris Inc.,Consumer Cyclical,ROE bajo o desconocido
+PHIA.AS,KON.PHILIPS N.V.,Healthcare,ROE bajo o desconocido
 PINS,"Pinterest, Inc.",Communication Services,ROE bajo o desconocido
+PII,Polaris Inc.,Consumer Cyclical,ROE bajo o desconocido
 PK,Park Hotels & Resorts Inc.,Real Estate,Deuda neta/EBITDA alta o desconocida
 PKG,Packaging Corporation of Americ,Consumer Cyclical,FCF negativo o desconocido
 PLD,"Prologis, Inc.",Real Estate,Deuda neta/EBITDA alta o desconocida
@@ -548,10 +557,12 @@ PSH.L,PERSHING SQUARE HOLDINGS LTD OR,Financial Services,Sector financiero (mét
 PSN,Parsons Corporation,Technology,ROE bajo o desconocido
 PSON.L,PEARSON PLC ORD 25P,Communication Services,ROE bajo o desconocido
 PST.MI,POSTE ITALIANE,Industrials,Deuda neta/EBITDA alta o desconocida
-PUM.DE,PUMA SE                       I,Consumer Cyclical,FCF negativo o desconocido
+PUB.PA,PUBLICIS GROUPE SA,Communication Services,Capitalización insuficiente o desconocida
+PUM.DE,PUMA SE                       I,Consumer Cyclical,Capitalización insuficiente o desconocida
 PVH,PVH Corp.,Consumer Cyclical,Deuda neta/EBITDA alta o desconocida
 PYPL,"PayPal Holdings, Inc.",Financial Services,Sector financiero (métricas no aplicables)
 Q,"Qnity Electronics, Inc.",Technology,ROE bajo o desconocido
+RACE.MI,FERRARI,Consumer Cyclical,FCF negativo o desconocido
 RAND.AS,Randstad N.V.,Industrials,ROE bajo o desconocido
 RBA,"RB Global, Inc.",Industrials,Deuda neta/EBITDA alta o desconocida
 RCL,Royal Caribbean Cruises Ltd.,Consumer Cyclical,FCF negativo o desconocido
@@ -559,8 +570,8 @@ RDC.DE,Redcare Pharmacy N.V.         A,Healthcare,FCF negativo o desconocido
 RED.MC,"REDEIA CORPORACION, S.A.",Utilities,FCF negativo o desconocido
 REG,Regency Centers Corporation,Real Estate,Deuda neta/EBITDA alta o desconocida
 REXR,"Rexford Industrial Realty, Inc.",Real Estate,Deuda neta/EBITDA alta o desconocida
-RGA,"Reinsurance Group of America, I",Financial Services,Sector financiero (métricas no aplicables)
 RF,Regions Financial Corporation,Financial Services,Sector financiero (métricas no aplicables)
+RGA,"Reinsurance Group of America, I",Financial Services,Sector financiero (métricas no aplicables)
 RGEN,Repligen Corporation,Healthcare,ROE bajo o desconocido
 RGLD,"Royal Gold, Inc.",Basic Materials,FCF negativo o desconocido
 RH,RH,Consumer Cyclical,Deuda neta/EBITDA alta o desconocida
@@ -570,13 +581,13 @@ RLI,RLI Corp.,Financial Services,Sector financiero (métricas no aplicables)
 RNO.PA,RENAULT,Consumer Cyclical,Deuda neta/EBITDA alta o desconocida
 RNR,RenaissanceRe Holdings Ltd.,Financial Services,Sector financiero (métricas no aplicables)
 ROIV,Roivant Sciences Ltd.,Healthcare,FCF negativo o desconocido
-RRTL.DE,RTL GROUP S.A.                A,Communication Services,ROE bajo o desconocido
 RRX,Regal Rexnord Corporation,Industrials,Deuda neta/EBITDA alta o desconocida
+RRTL.DE,RTL GROUP S.A.                A,Communication Services,ROE bajo o desconocido
 RTO.L,RENTOKIL INITIAL PLC ORD 1P,Industrials,ROE bajo o desconocido
-RVTY,"Revvity, Inc.",Healthcare,ROE bajo o desconocido
 RWE.DE,RWE AG                        I,Utilities,FCF negativo o desconocido
-RYAN,"Ryan Specialty Holdings, Inc.",Financial Services,Sector financiero (métricas no aplicables)
+RVTY,"Revvity, Inc.",Healthcare,ROE bajo o desconocido
 RYN,Rayonier Inc. REIT,Real Estate,Deuda neta/EBITDA alta o desconocida
+RYAN,"Ryan Specialty Holdings, Inc.",Financial Services,Sector financiero (métricas no aplicables)
 SAB.MC,BANCO DE SABADELL,Financial Services,Sector financiero (métricas no aplicables)
 SAIC,Science Applications Internatio,Technology,Deuda neta/EBITDA alta o desconocida
 SAN.MC,BANCO SANTANDER S.A.,Financial Services,Sector financiero (métricas no aplicables)
@@ -591,12 +602,12 @@ SBUX,Starbucks Corporation,Consumer Cyclical,Deuda neta/EBITDA alta o desconocid
 SCHW,Charles Schwab Corporation (The,Financial Services,Sector financiero (métricas no aplicables)
 SCI,Service Corporation Internation,Consumer Cyclical,Deuda neta/EBITDA alta o desconocida
 SCYR.MC,"SACYR, S.A.",Industrials,Deuda neta/EBITDA alta o desconocida
+SDF.DE,K+S Aktiengesellschaft        N,Basic Materials,Capitalización insuficiente o desconocida
 SDLF.L,STANDARD LIFE PLC ORD 10P,Financial Services,Sector financiero (métricas no aplicables)
 SEIC,SEI Investments Company,Financial Services,Sector financiero (métricas no aplicables)
 SF,Stifel Financial Corporation,Financial Services,Sector financiero (métricas no aplicables)
 SGI,Somnigroup International Inc.,Consumer Cyclical,Deuda neta/EBITDA alta o desconocida
 SGRO.L,SEGRO PLC ORD 10P,Real Estate,Deuda neta/EBITDA alta o desconocida
-SHC,Sotera Health Company,Healthcare,Deuda neta/EBITDA alta o desconocida
 SHL.DE,Siemens Healthineers AG       N,Healthcare,Deuda neta/EBITDA alta o desconocida
 SHW,Sherwin-Williams Company (The),Basic Materials,Deuda neta/EBITDA alta o desconocida
 SIE.DE,SIEMENS AG                    N,Industrials,Deuda neta/EBITDA alta o desconocida
@@ -610,8 +621,8 @@ SLGN,Silgan Holdings Inc.,Consumer Cyclical,Deuda neta/EBITDA alta o desconocida
 SLM,SLM Corporation,Financial Services,Sector financiero (métricas no aplicables)
 SLR.MC,SOLARIA ENERGIA Y MEDIO AMBIENT,Utilities,FCF negativo o desconocido
 SMCI,"Super Micro Computer, Inc.",Technology,FCF negativo o desconocido
-SMIN.L,SMITHS GROUP PLC ORD 37.5P,Industrials,ROE bajo o desconocido
 SMG,Scotts Miracle-Gro Company (The,Basic Materials,Deuda neta/EBITDA alta o desconocida
+SMIN.L,SMITHS GROUP PLC ORD 37.5P,Industrials,ROE bajo o desconocido
 SMT.L,SCOTTISH MORTGAGE INVESTMENT TR,Desconocido,FCF negativo o desconocido
 SNPS,"Synopsys, Inc.",Technology,Deuda neta/EBITDA alta o desconocida
 SNX,TD SYNNEX Corporation,Technology,FCF negativo o desconocido
@@ -620,6 +631,7 @@ SOLS,Solstice Advanced Materials Inc,Basic Materials,FCF negativo o desconocido
 SOLV,Solventum Corporation,Healthcare,Deuda neta/EBITDA alta o desconocida
 SON,Sonoco Products Company,Consumer Cyclical,Deuda neta/EBITDA alta o desconocida
 SPG,"Simon Property Group, Inc.",Real Estate,Deuda neta/EBITDA alta o desconocida
+SPM.MI,SAIPEM,Energy,Capitalización insuficiente o desconocida
 SPGI,S&P Global Inc.,Financial Services,Sector financiero (métricas no aplicables)
 SR,Spire Inc.,Utilities,FCF negativo o desconocido
 SRE,DBA Sempra,Utilities,FCF negativo o desconocido
@@ -630,8 +642,8 @@ SSE.L,SSE PLC ORD 50P,Utilities,FCF negativo o desconocido
 STAG,"Stag Industrial, Inc.",Real Estate,Deuda neta/EBITDA alta o desconocida
 STAN.L,STANDARD CHARTERED PLC ORD USD0,Financial Services,Sector financiero (métricas no aplicables)
 STJ.L,ST. JAMES'S PLACE PLC ORD 15P,Financial Services,Sector financiero (métricas no aplicables)
-STLAP.PA,STELLANTIS NV,Consumer Cyclical,FCF negativo o desconocido
 STLAM.MI,STELLANTIS,Consumer Cyclical,FCF negativo o desconocido
+STLAP.PA,STELLANTIS NV,Consumer Cyclical,FCF negativo o desconocido
 STM.DE,Stabilus SE                   I,Industrials,Capitalización insuficiente o desconocida
 STMMI.MI,STMICROELECTRONICS,Technology,ROE bajo o desconocido
 STMPA.PA,STMICROELECTRONICS,Technology,ROE bajo o desconocido
@@ -649,8 +661,8 @@ SYNA,Synaptics Incorporated,Technology,Deuda neta/EBITDA alta o desconocida
 T,AT&T Inc.,Communication Services,Deuda neta/EBITDA alta o desconocida
 TCBI,"Texas Capital Bancshares, Inc.",Financial Services,Sector financiero (métricas no aplicables)
 TDG,Transdigm Group Incorporated,Industrials,Deuda neta/EBITDA alta o desconocida
-TECH,Bio-Techne Corp,Healthcare,ROE bajo o desconocido
 TDY,Teledyne Technologies Incorpora,Technology,ROE bajo o desconocido
+TECH,Bio-Techne Corp,Healthcare,ROE bajo o desconocido
 TEF.MC,"TELEFONICA,S.A.",Communication Services,Deuda neta/EBITDA alta o desconocida
 TEG.DE,TAG Immobilien AG             I,Real Estate,Deuda neta/EBITDA alta o desconocida
 TEX,Terex Corporation,Industrials,Deuda neta/EBITDA alta o desconocida
@@ -682,7 +694,7 @@ TXNM,"TXNM Energy, Inc.",Utilities,FCF negativo o desconocido
 UAL,"United Airlines Holdings, Inc.",Industrials,FCF negativo o desconocido
 UBSI,"United Bankshares, Inc.",Financial Services,Sector financiero (métricas no aplicables)
 UCG.MI,UNICREDIT,Financial Services,Sector financiero (métricas no aplicables)
-UDR,"UDR, Inc.",Real Estate,Deuda neta/EBITDA alta o desconocida
+UDR,"UDR, Inc.",Real Estate,FCF negativo o desconocido
 UFPI,"UFP Industries, Inc.",Basic Materials,ROE bajo o desconocido
 UGI,UGI Corporation,Utilities,FCF negativo o desconocido
 UMBF,UMB Financial Corporation,Financial Services,Sector financiero (métricas no aplicables)
@@ -693,23 +705,26 @@ UNM,Unum Group,Financial Services,Sector financiero (métricas no aplicables)
 URI,"United Rentals, Inc.",Industrials,Deuda neta/EBITDA alta o desconocida
 URW.PA,UNIBAIL-RODAMCO-WESTFIELD,Real Estate,Deuda neta/EBITDA alta o desconocida
 USB,U.S. Bancorp,Financial Services,Sector financiero (métricas no aplicables)
+USFD,US Foods Holding Corp.,Consumer Defensive,Deuda neta/EBITDA alta o desconocida
 UTDI.DE,UNITED INTERNET AG            N,Communication Services,FCF negativo o desconocido
 UU.L,UNITED UTILITIES GROUP PLC ORD ,Utilities,FCF negativo o desconocido
 V,Visa Inc.,Financial Services,Sector financiero (métricas no aplicables)
+VAL,Valaris Limited,Energy,FCF negativo o desconocido
 VFC,V.F. Corporation,Consumer Cyclical,Deuda neta/EBITDA alta o desconocida
 VIAV,Viavi Solutions Inc.,Technology,ROE bajo o desconocido
 VICI,VICI Properties Inc.,Real Estate,Deuda neta/EBITDA alta o desconocida
 VIE.PA,VEOLIA ENVIRON.,Industrials,Deuda neta/EBITDA alta o desconocida
 VLY,Valley National Bancorp,Financial Services,Sector financiero (métricas no aplicables)
-VNA.DE,Vonovia SE                    N,Real Estate,Deuda neta/EBITDA alta o desconocida
 VMRK,Vivmark Residential,Real Estate,Deuda neta/EBITDA alta o desconocida
+VNA.DE,Vonovia SE                    N,Real Estate,Deuda neta/EBITDA alta o desconocida
 VNO,Vornado Realty Trust,Real Estate,Deuda neta/EBITDA alta o desconocida
 VNOM,"Viper Energy, Inc.",Energy,ROE bajo o desconocido
 VOD.L,VODAFONE GROUP PLC ORD USD0.20 ,Communication Services,Deuda neta/EBITDA alta o desconocida
-VOYA,"Voya Financial, Inc.",Financial Services,Sector financiero (métricas no aplicables)
 VOW3.DE,VOLKSWAGEN AG                 V,Consumer Cyclical,Deuda neta/EBITDA alta o desconocida
+VOYA,"Voya Financial, Inc.",Financial Services,Sector financiero (métricas no aplicables)
 VRSK,"Verisk Analytics, Inc.",Industrials,ROE bajo o desconocido
 VRSN,"VeriSign, Inc.",Technology,ROE bajo o desconocido
+VRTX,Vertex Pharmaceuticals Incorpor,Healthcare,FCF negativo o desconocido
 VST,Vistra Corp.,Utilities,Deuda neta/EBITDA alta o desconocida
 VTR,"Ventas, Inc.",Real Estate,Deuda neta/EBITDA alta o desconocida
 VTRS,Viatris Inc.,Healthcare,ROE bajo o desconocido
@@ -720,7 +735,7 @@ WAF.DE,Siltronic AG                  N,Technology,FCF negativo o desconocido
 WAL,Western Alliance Bancorporation,Financial Services,Sector financiero (métricas no aplicables)
 WAT,Waters Corporation,Healthcare,FCF negativo o desconocido
 WCC,"WESCO International, Inc.",Industrials,Deuda neta/EBITDA alta o desconocida
-WCH.DE,Wacker Chemie AG              I,Basic Materials,ROE bajo o desconocido
+WCH.DE,Wacker Chemie AG              I,Basic Materials,Capitalización insuficiente o desconocida
 WEC,"WEC Energy Group, Inc.",Utilities,FCF negativo o desconocido
 WELL,Welltower Inc.,Real Estate,Deuda neta/EBITDA alta o desconocida
 WFC,Wells Fargo & Company,Financial Services,Sector financiero (métricas no aplicables)
