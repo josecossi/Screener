@@ -1,0 +1,57 @@
+06:51:21 1/4 Construyendo universo
+06:51:21   S&P 500          503 tickers
+06:51:21   S&P 400 MidCap   400 tickers
+06:51:21   IBEX 35           35 tickers
+06:51:21   DAX               40 tickers
+06:51:21   MDAX              50 tickers
+06:51:21   CAC 40            40 tickers
+06:51:22   FTSE MIB          40 tickers
+06:51:22   AEX               25 tickers
+06:51:22   FTSE 100         100 tickers
+06:51:22   Manual             0 tickers
+06:51:22 Universo total (sin duplicados): 1228
+06:51:22 2/4 Descargando datos de 1228 empresas (puede tardar 15-40 min)
+06:51:46   descargados 50/1228
+06:52:09   descargados 100/1228
+06:52:32   descargados 150/1228
+06:52:55   descargados 200/1228
+06:53:18   descargados 250/1228
+06:53:41   descargados 300/1228
+06:54:05   descargados 350/1228
+06:54:28   descargados 400/1228
+06:54:51   descargados 450/1228
+06:55:00 HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"No fundamentals data found for symbol: FOX"}}}
+06:55:14   descargados 500/1228
+06:55:37   descargados 550/1228
+06:56:00   descargados 600/1228
+06:56:23   descargados 650/1228
+06:56:46   descargados 700/1228
+06:57:09   descargados 750/1228
+06:57:33   descargados 800/1228
+06:57:56   descargados 850/1228
+06:58:19   descargados 900/1228
+06:58:42   descargados 950/1228
+06:59:05   descargados 1000/1228
+06:59:28   descargados 1050/1228
+06:59:51   descargados 1100/1228
+07:00:14   descargados 1150/1228
+07:00:37   descargados 1200/1228
+07:00:50   descargados 1228/1228
+07:00:50 3/4 Puntuando
+07:00:50    481 superan filtros, 747 excluidas
+07:00:50 4/4 Exportando
+07:00:51 Excel generado: /home/runner/work/Screener/Screener/resultados/screener_2026-11-04.xlsx
+07:00:51 Correo no configurado (variables SCREENER_EMAIL_*); se omite el envío
+
+TOP 10
+ ranking  ticker                         empresa            sector  puntuacion
+       1    SNDK             Sandisk Corporation        Technology        94.5
+       2     PBF                 PBF Energy Inc.            Energy        92.6
+       3    DINO         HF Sinclair Corporation            Energy        88.7
+       4      MU         Micron Technology, Inc.        Technology        87.5
+       5     WEX                        WEX Inc.        Technology        84.6
+       6     VLO       Valero Energy Corporation            Energy        83.0
+       7    EXPE             Expedia Group, Inc. Consumer Cyclical        82.2
+       8 NDX1.DE Nordex SE                     I       Industrials        81.8
+       9     ANF     Abercrombie & Fitch Company Consumer Cyclical        81.7
+      10    CROX                     Crocs, Inc. Consumer Cyclical        80.6
