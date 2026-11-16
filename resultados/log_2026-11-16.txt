@@ -1,47 +1,47 @@
-06:52:49 1/4 Construyendo universo
-06:52:49   S&P 500          503 tickers
-06:52:49   S&P 400 MidCap   400 tickers
-06:52:49   IBEX 35           35 tickers
-06:52:49   DAX               40 tickers
-06:52:49   MDAX              50 tickers
-06:52:49   CAC 40            40 tickers
-06:52:49   FTSE MIB          40 tickers
-06:52:49   AEX               25 tickers
-06:52:50   FTSE 100         100 tickers
-06:52:50   Manual             0 tickers
-06:52:50 Universo total (sin duplicados): 1228
-06:52:50 2/4 Descargando datos de 1228 empresas (puede tardar 15-40 min)
-06:53:11   descargados 50/1228
-06:53:32   descargados 100/1228
-06:53:52   descargados 150/1228
-06:54:13   descargados 200/1228
-06:54:34   descargados 250/1228
-06:54:54   descargados 300/1228
-06:55:16   descargados 350/1228
-06:55:38   descargados 400/1228
-06:55:58   descargados 450/1228
-06:56:07 HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"No fundamentals data found for symbol: FOX"}}}
-06:56:19   descargados 500/1228
-06:56:39   descargados 550/1228
-06:57:00   descargados 600/1228
-06:57:21   descargados 650/1228
-06:57:41   descargados 700/1228
-06:58:02   descargados 750/1228
-06:58:23   descargados 800/1228
-06:58:43   descargados 850/1228
-06:59:04   descargados 900/1228
-06:59:24   descargados 950/1228
-06:59:45   descargados 1000/1228
-07:00:06   descargados 1050/1228
-07:00:27   descargados 1100/1228
-07:00:47   descargados 1150/1228
-07:01:08   descargados 1200/1228
-07:01:25   descargados 1228/1228
-07:01:25 3/4 Puntuando
-07:01:25    495 superan filtros, 733 excluidas
-07:01:25 4/4 Exportando
-07:01:25 Excel generado: /home/runner/work/Screener/Screener/resultados/screener_2026-11-16.xlsx
-07:01:25 Correo no configurado (variables SCREENER_EMAIL_*); se omite el envío
+12:48:01 1/4 Construyendo universo
+12:48:01   S&P 500          503 tickers
+12:48:01   S&P 400 MidCap   400 tickers
+12:48:01   IBEX 35           35 tickers
+12:48:01   DAX               40 tickers
+12:48:01   MDAX              50 tickers
+12:48:01   CAC 40            40 tickers
+12:48:01   FTSE MIB          40 tickers
+12:48:02   AEX               25 tickers
+12:48:02   FTSE 100         100 tickers
+12:48:02   Manual             0 tickers
+12:48:02 Universo total (sin duplicados): 1228
+12:48:02 2/4 Descargando datos de 1228 empresas (puede tardar 15-40 min)
+12:48:23   descargados 50/1228
+12:48:45   descargados 100/1228
+12:49:05   descargados 150/1228
+12:49:27   descargados 200/1228
+12:49:48   descargados 250/1228
+12:50:09   descargados 300/1228
+12:50:30   descargados 350/1228
+12:50:52   descargados 400/1228
+12:51:12   descargados 450/1228
+12:51:21 HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"No fundamentals data found for symbol: FOX"}}}
+12:51:34   descargados 500/1228
+12:51:54   descargados 550/1228
+12:52:16   descargados 600/1228
+12:52:37   descargados 650/1228
+12:52:58   descargados 700/1228
+12:53:19   descargados 750/1228
+12:53:41   descargados 800/1228
+12:54:01   descargados 850/1228
+12:54:23   descargados 900/1228
+12:54:44   descargados 950/1228
+12:55:05   descargados 1000/1228
+12:55:26   descargados 1050/1228
+12:55:47   descargados 1100/1228
+12:56:08   descargados 1150/1228
+12:56:29   descargados 1200/1228
+12:56:42   descargados 1228/1228
+12:56:42 3/4 Puntuando
+12:56:42    495 superan filtros, 733 excluidas
+12:56:42 4/4 Exportando
+12:56:43 Excel generado: /home/runner/work/Screener/Screener/resultados/screener_2026-11-16.xlsx
+12:56:43 Correo no configurado (variables SCREENER_EMAIL_*); se omite el envío
 
 TOP 10
  ranking  ticker                         empresa          sector  puntuacion
@@ -49,7 +49,7 @@ TOP 10
        2     PBF                 PBF Energy Inc.          Energy        92.8
        3    DINO         HF Sinclair Corporation          Energy        89.5
        4      MU         Micron Technology, Inc.      Technology        87.9
-       5 NDX1.DE Nordex SE                     I     Industrials        86.3
+       5 NDX1.DE Nordex SE                     I     Industrials        86.4
        6      CF    CF Industries Holdings, Inc. Basic Materials        85.9
        7     APA                 APA Corporation          Energy        85.8
        8     WEX                        WEX Inc.      Technology        84.8
