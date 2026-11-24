@@ -1,0 +1,57 @@
+06:51:30 1/4 Construyendo universo
+06:51:31   S&P 500          503 tickers
+06:51:31   S&P 400 MidCap   400 tickers
+06:51:31   IBEX 35           35 tickers
+06:51:31   DAX               40 tickers
+06:51:31   MDAX              50 tickers
+06:51:31   CAC 40            40 tickers
+06:51:31   FTSE MIB          40 tickers
+06:51:31   AEX               25 tickers
+06:51:31   FTSE 100         100 tickers
+06:51:31   Manual             0 tickers
+06:51:31 Universo total (sin duplicados): 1228
+06:51:31 2/4 Descargando datos de 1228 empresas (puede tardar 15-40 min)
+06:51:52   descargados 50/1228
+06:52:13   descargados 100/1228
+06:52:34   descargados 150/1228
+06:52:54   descargados 200/1228
+06:53:15   descargados 250/1228
+06:53:36   descargados 300/1228
+06:53:57   descargados 350/1228
+06:54:17   descargados 400/1228
+06:54:38   descargados 450/1228
+06:54:47 HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"No fundamentals data found for symbol: FOX"}}}
+06:54:59   descargados 500/1228
+06:55:19   descargados 550/1228
+06:55:40   descargados 600/1228
+06:56:01   descargados 650/1228
+06:56:21   descargados 700/1228
+06:56:42   descargados 750/1228
+06:57:02   descargados 800/1228
+06:57:23   descargados 850/1228
+06:57:44   descargados 900/1228
+06:58:05   descargados 950/1228
+06:58:25   descargados 1000/1228
+06:58:46   descargados 1050/1228
+06:59:07   descargados 1100/1228
+06:59:27   descargados 1150/1228
+06:59:48   descargados 1200/1228
+06:59:59   descargados 1228/1228
+06:59:59 3/4 Puntuando
+06:59:59    495 superan filtros, 733 excluidas
+06:59:59 4/4 Exportando
+07:00:00 Excel generado: /home/runner/work/Screener/Screener/resultados/screener_2026-11-24.xlsx
+07:00:00 Correo no configurado (variables SCREENER_EMAIL_*); se omite el envío
+
+TOP 10
+ ranking  ticker                         empresa          sector  puntuacion
+       1    SNDK             Sandisk Corporation      Technology        96.6
+       2     PBF                 PBF Energy Inc.          Energy        92.3
+       3    DINO         HF Sinclair Corporation          Energy        90.2
+       4      MU         Micron Technology, Inc.      Technology        88.2
+       5 NDX1.DE Nordex SE                     I     Industrials        87.9
+       6      CF    CF Industries Holdings, Inc. Basic Materials        87.0
+       7     APA                 APA Corporation          Energy        84.7
+       8     WEX                        WEX Inc.      Technology        83.4
+       9     VLO       Valero Energy Corporation          Energy        83.3
+      10     MPC  Marathon Petroleum Corporation          Energy        81.8
